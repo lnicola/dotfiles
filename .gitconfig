@@ -1,0 +1,13 @@
+[include]
+    path = .gitconfig-creds
+[credential]
+    helper = cache --timeout=360000
+[color]
+    ui = true
+[push]
+    default = simple
+[sendemail]
+    smtpencryption = tls
+    smtpserver = mail.messagingengine.com
+    smtpserverport = 587
+    confirm = auto
