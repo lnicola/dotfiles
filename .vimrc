@@ -49,5 +49,8 @@ inoremap <silent> <Home> <Esc>:call ExtendedHome()<CR>i
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+set mouse=a
+set ttymouse=xterm2
+
 :start
 
