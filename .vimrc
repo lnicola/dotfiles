@@ -20,9 +20,6 @@ let loaded_matchparen = 1
 :set ttyfast
 :set lazyredraw
 
-":set mouse=a
-":set ttymouse=xterm2
-
 :set virtualedit=all
 :set hlsearch
 :set incsearch
@@ -51,6 +48,9 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 set mouse=a
 set ttymouse=xterm2
+
+noremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
 
 :start
 
