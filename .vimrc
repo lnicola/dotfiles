@@ -41,16 +41,29 @@ endfunction
 noremap <silent> <Home> :call ExtendedHome()<CR>
 inoremap <silent> <Home> <Esc>:call ExtendedHome()<CR>i
 
+function ClangFormat()
+    let result=system("clang-format", join(getline(1, "$"), "\n"))
+    %delete
+    put =result
+    normal! gg
+endfunction
+
+map <C-K> :call ClangFormat()<CR>
+imap <C-K> <ESC>:call ClangFormat()<CR>i
+
+"map <C-K> :pyf /usr/share/clang/clang-format.py<CR>
+"imap <C-K> <ESC>:pyf /usr/share/clang/clang-format.py<CR>i
+
 ":map <Home> ^
 ":imap <Home> <Esc>^i
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-set mouse=a
+"set mouse=a
 set ttymouse=xterm2
 
-noremap <Down> <C-o>gj
-inoremap <Up> <C-o>gk
+"noremap <Down> <C-o>gj
+"inoremap <Up> <C-o>gk
 
 :start
 
