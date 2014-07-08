@@ -30,6 +30,8 @@ let loaded_matchparen = 1
 :set smarttab
 :set expandtab
 
+:set noeb vb t_vb=
+
 function ExtendedHome()
     let column = col('.')
     normal! ^
