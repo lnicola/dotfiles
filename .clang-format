@@ -2,6 +2,7 @@
 BasedOnStyle: LLVM
 IndentWidth: 4
 TabWidth: 4
+AccessModifierOffset: -4
 ColumnLimit: 100
 BreakBeforeBraces: Linux
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
@@ -10,5 +11,6 @@ AllowShortFunctionsOnASingleLine: false
 Cpp11BracedListStyle: false
 SpaceAfterCStyleCast: true
 BinPackParameters: false
+AlwaysBreakTemplateDeclarations: true
 ...
 
