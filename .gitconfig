@@ -4,8 +4,6 @@
     ci = commit
     ps = push
     pu = pull
-[push]
-    default = simple
 [diff]
     algorithm = patience
 [push]
