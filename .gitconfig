@@ -1,13 +1,33 @@
-[include]
-    path = .gitconfig-creds
-[credential]
-    helper = cache --timeout=360000
-[color]
-    ui = true
+[alias]
+    cl = clone
+    st = status
+    ci = commit
+    ps = push
+    pu = pull
 [push]
     default = simple
+[diff]
+    algorithm = patience
+[push]
+    default = simple
+[user]
+    email = lnicola@dend.ro
+    name = Laurentiu Nicola
 [sendemail]
     smtpencryption = tls
     smtpserver = mail.messagingengine.com
     smtpserverport = 587
     confirm = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
