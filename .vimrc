@@ -67,5 +67,6 @@ set mouse=a
 "noremap <Down> <C-o>gj
 "inoremap <Up> <C-o>gk
 
-:start
+set clipboard=unnamedplus
 
+:start
