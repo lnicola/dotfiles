@@ -61,8 +61,8 @@ imap <C-K> <ESC>:call ClangFormat()<CR>i
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-"set mouse=a
-set ttymouse=xterm2
+set mouse=a
+"set ttymouse=xterm2
 
 "noremap <Down> <C-o>gj
 "inoremap <Up> <C-o>gk
