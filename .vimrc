@@ -61,6 +61,9 @@ imap <C-K> <ESC>:call ClangFormat()<CR>i
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+:au BufRead,BufNewFile *.txr set filetype=txr | set lisp
+:au BufRead,BufNewFile *.tl set filetype=txl | set lisp
+
 set mouse=a
 "set ttymouse=xterm2
 
