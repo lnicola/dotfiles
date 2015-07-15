@@ -26,3 +26,11 @@
 (setq delete-by-moving-to-trash t)
 
 (setq column-number-mode t)
+
+; (load "auctex.el" nil t t)
+; (load "preview-latex.el" nil t t)
+
+(setq TeX-parse-self t)
+(setq TeX-auto-save t)
+(setq-default TeX-master nil)
+(setq TeX-PDF-mode t)
