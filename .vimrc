@@ -12,7 +12,14 @@ let g:syntastic_always_populate_loc_list = 1
 
 let loaded_matchparen = 1
 
+au BufRead,BufNewFile *.txx set filetype=cpp
+
 :syntax on
+
+set background=dark
+set t_Co=256
+let g:solarized_termcolors=256
+"colorscheme solarized
 
 ":set foldmethod=syntax
 ":set foldlevelstart=20
@@ -20,7 +27,7 @@ let loaded_matchparen = 1
 :set ttyfast
 :set lazyredraw
 
-:set virtualedit=all
+":set virtualedit=all
 :set hlsearch
 :set incsearch
 
@@ -53,19 +60,33 @@ endfunction
 map <C-K> :call ClangFormat()<CR>
 imap <C-K> <ESC>:call ClangFormat()<CR>i
 
-"map <C-K> :pyf /usr/share/clang/clang-format.py<CR>
-"imap <C-K> <ESC>:pyf /usr/share/clang/clang-format.py<CR>i
-
 ":map <Home> ^
 ":imap <Home> <Esc>^i
 
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+"au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-"set mouse=a
-set ttymouse=xterm2
+:au BufRead,BufNewFile *.txr set filetype=txr | set lisp
+:au BufRead,BufNewFile *.tl set filetype=txl | set lisp
+
+autocmd BufWritePre * :%s/\s\+$//e
+
+set mouse=a
+"set ttymouse=xterm2
+
+set clipboard=unnamedplus
+set ruler
 
 "noremap <Down> <C-o>gj
 "inoremap <Up> <C-o>gk
+
+"inoremap <silent> <Esc> <C-O>:stopinsert<CR>
+
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+      let g:airline_symbols = {}
+  endif
+let g:airline_symbols.space = "\ua0"
 
 :start
 
