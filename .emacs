@@ -131,3 +131,11 @@
 
 ;; optional key bindings, easier than hs defaults
 (define-key nxml-mode-map (kbd "C-c h") 'hs-toggle-hiding)
+
+; (load "auctex.el" nil t t)
+; (load "preview-latex.el" nil t t)
+
+(setq TeX-parse-self t)
+(setq TeX-auto-save t)
+(setq-default TeX-master nil)
+(setq TeX-PDF-mode t)

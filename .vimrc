@@ -65,16 +65,16 @@ imap <C-K> <ESC>:call ClangFormat()<CR>i
 
 "au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-:au BufRead,BufNewFile *.txr set filetype=txr | set lisp
-:au BufRead,BufNewFile *.tl set filetype=txl | set lisp
-
 autocmd BufWritePre * :%s/\s\+$//e
-
-set mouse=a
-"set ttymouse=xterm2
 
 set clipboard=unnamedplus
 set ruler
+
+:au BufRead,BufNewFile *.txr set filetype=txr | set lisp
+:au BufRead,BufNewFile *.tl set filetype=txl | set lisp
+
+set mouse=a
+"set ttymouse=xterm2
 
 "noremap <Down> <C-o>gj
 "inoremap <Up> <C-o>gk
@@ -89,4 +89,3 @@ if !exists('g:airline_symbols')
 let g:airline_symbols.space = "\ua0"
 
 :start
-
