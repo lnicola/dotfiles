@@ -24,26 +24,13 @@ call vundle#end()
 
 filetype plugin indent on
 
-let g:ycm_confirm_extra_conf = 0
-let g:syntastic_always_populate_loc_list = 1
-
 au BufRead,BufNewFile *.txx set filetype=cpp
-au BufWinEnter * normal zR
-
-let g:xml_syntax_folding=1
-set foldmethod=syntax
-
-inoremap <F9> <C-O>za
-nnoremap <F9> za
-onoremap <F9> <C-C>za
-vnoremap <F9> zf
+au BufRead,BufNewFile *.txr set filetype=txr | set lisp
+au BufRead,BufNewFile *.tl set filetype=txl | set lisp
 
 syntax on
 
-"set background=dark
-"let g:solarized_termcolors=256
-"colorscheme solarized
-
+set noswapfile
 set lazyredraw
 
 set ignorecase
@@ -51,12 +38,10 @@ set smartcase
 
 set tabstop=4
 set shiftwidth=0
-
 set expandtab
-
 set smartindent
 
-set noswapfile
+set foldmethod=syntax
 
 function ExtendedHome()
     let column = col('.')
@@ -67,27 +52,31 @@ function ExtendedHome()
 endfunction
 
 noremap <silent> <Home> :call ExtendedHome()<CR>
-inoremap <silent> <Home> <Esc>:call ExtendedHome()<CR>i
+inoremap <silent> <Home> <C-o>:call ExtendedHome()<CR>
 
-"au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+au BufWinLeave * mkview
+au BufWinEnter * silent! loadview
 
 au BufWritePre * :%s/\s\+$//e
 
 set clipboard=unnamedplus
 set ruler
 
-au BufRead,BufNewFile *.txr set filetype=txr | set lisp
-au BufRead,BufNewFile *.tl set filetype=txl | set lisp
+let g:xml_syntax_folding=1
+au BufWinEnter * normal zR
 
-"noremap <Down> <C-o>gj
-"inoremap <Up> <C-o>gk
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+inoremap <F9> <C-O>za
 
-"inoremap <silent> <Esc> <C-O>:stopinsert<CR>
+let g:ycm_confirm_extra_conf = 0
+let g:syntastic_always_populate_loc_list = 1
 
 if $TERM !~ "putty"
     let g:airline_powerline_fonts = 1
 endif
-if !exists('g:airline_symbols')
-      let g:airline_symbols = {}
-endif
-let g:airline_symbols.space = "\ua0"
+"if !exists('g:airline_symbols')
+"      let g:airline_symbols = {}
+"endif
+"let g:airline_symbols.space = "\ua0"
