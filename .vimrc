@@ -46,23 +46,15 @@ syntax on
 
 set lazyredraw
 
-":set virtualedit=all
 set ignorecase
 set smartcase
 
-set hlsearch
-set incsearch
-
 set tabstop=4
-set shiftwidth=4
+set shiftwidth=0
 
-set smarttab
 set expandtab
 
 set smartindent
-
-set noerrorbells
-set novisualbell
 
 set noswapfile
 
