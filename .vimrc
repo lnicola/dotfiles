@@ -92,7 +92,9 @@ au BufRead,BufNewFile *.tl set filetype=txl | set lisp
 
 "inoremap <silent> <Esc> <C-O>:stopinsert<CR>
 
-let g:airline_powerline_fonts = 1
+if $TERM !~ "putty"
+    let g:airline_powerline_fonts = 1
+endif
 if !exists('g:airline_symbols')
       let g:airline_symbols = {}
 endif
