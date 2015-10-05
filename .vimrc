@@ -76,7 +76,3 @@ let g:syntastic_always_populate_loc_list = 1
 if $TERM !~ "putty"
     let g:airline_powerline_fonts = 1
 endif
-"if !exists('g:airline_symbols')
-"      let g:airline_symbols = {}
-"endif
-"let g:airline_symbols.space = "\ua0"
