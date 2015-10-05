@@ -54,7 +54,7 @@ endfunction
 noremap <silent> <Home> :call ExtendedHome()<CR>
 inoremap <silent> <Home> <C-o>:call ExtendedHome()<CR>
 
-au BufWinLeave * mkview
+au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
 
 au BufWritePre * :%s/\s\+$//e
