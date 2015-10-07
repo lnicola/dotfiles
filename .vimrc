@@ -19,6 +19,7 @@ Plugin 'coot/EnchantedVim'
 Plugin 'sukima/xmledit'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'Chiel92/vim-autoformat'
 
 call vundle#end()
 
@@ -37,7 +38,8 @@ set ignorecase
 set smartcase
 
 set tabstop=4
-set shiftwidth=0
+set shiftwidth=4 " vim-autoformat doesn't like 0
+
 set expandtab
 set smartindent
 
@@ -69,6 +71,10 @@ nnoremap <F9> za
 onoremap <F9> <C-C>za
 vnoremap <F9> zf
 inoremap <F9> <C-O>za
+
+nnoremap <F3> :Autoformat<CR>
+vnoremap <F3> :Autoformat<CR>
+inoremap <F3> <C-O>:Autoformat<CR>
 
 let g:ycm_confirm_extra_conf = 0
 let g:syntastic_always_populate_loc_list = 1
