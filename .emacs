@@ -27,6 +27,18 @@
 
 (setq column-number-mode t)
 
+(require 'package)
+
+(add-to-list
+ 'package-archives
+ '("melpa" . "http://melpa.org/packages/")
+ t)
+
+(package-initialize)
+
+
+(package-install 'magit)
+
 ; (load "auctex.el" nil t t)
 ; (load "preview-latex.el" nil t t)
 
