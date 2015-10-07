@@ -4,6 +4,7 @@
     ci = commit
     ps = push
     pu = pull
+    pullall = !bash -c \"git pull && git submodule update --init --recursive\"
 [diff]
     algorithm = patience
 [push]
