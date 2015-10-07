@@ -1,36 +1,49 @@
-:filetype plugin indent on
+filetype off
 
-"execute pathogen#infect()
+let g:python_host_prog='/usr/bin/python2'
 
-"set rtp+=~/.vim/bundle/vundle
-"call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-"Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-commentary'
+Plugin 'coot/CRDispatcher'
+Plugin 'coot/EnchantedVim'
+Plugin 'sukima/xmledit'
+Plugin 'rhysd/vim-clang-format'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'Chiel92/vim-autoformat'
 
-let g:ycm_confirm_extra_conf = 0
-let g:syntastic_always_populate_loc_list = 1
+call vundle#end()
 
-let loaded_matchparen = 1
+filetype plugin indent on
 
-:syntax on
+au BufRead,BufNewFile *.txx set filetype=cpp
+au BufRead,BufNewFile *.txr set filetype=txr | set lisp
+au BufRead,BufNewFile *.tl set filetype=txl | set lisp
 
-":set foldmethod=syntax
-":set foldlevelstart=20
+syntax on
 
-:set ttyfast
-:set lazyredraw
+set noswapfile
+set lazyredraw
 
-:set virtualedit=all
-:set hlsearch
-:set incsearch
+set ignorecase
+set smartcase
 
-:set tabstop=4
-:set shiftwidth=4
+set tabstop=4
+set shiftwidth=4 " vim-autoformat doesn't like 0
 
-:set smarttab
-:set expandtab
+set expandtab
+set smartindent
 
-:set noeb vb t_vb=
+set foldmethod=syntax
 
 function ExtendedHome()
     let column = col('.')
@@ -41,35 +54,31 @@ function ExtendedHome()
 endfunction
 
 noremap <silent> <Home> :call ExtendedHome()<CR>
-inoremap <silent> <Home> <Esc>:call ExtendedHome()<CR>i
+inoremap <silent> <Home> <C-o>:call ExtendedHome()<CR>
 
-function ClangFormat()
-    let result=system("clang-format", join(getline(1, "$"), "\n"))
-    %delete
-    put =result
-    normal! gg
-endfunction
+au BufWinLeave * silent! mkview
+au BufWinEnter * silent! loadview
 
-map <C-K> :call ClangFormat()<CR>
-imap <C-K> <ESC>:call ClangFormat()<CR>i
-
-"map <C-K> :pyf /usr/share/clang/clang-format.py<CR>
-"imap <C-K> <ESC>:pyf /usr/share/clang/clang-format.py<CR>i
-
-":map <Home> ^
-":imap <Home> <Esc>^i
-
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-
-:au BufRead,BufNewFile *.txr set filetype=txr | set lisp
-:au BufRead,BufNewFile *.tl set filetype=txl | set lisp
-
-set mouse=a
-"set ttymouse=xterm2
-
-"noremap <Down> <C-o>gj
-"inoremap <Up> <C-o>gk
+au BufWritePre * :%s/\s\+$//e
 
 set clipboard=unnamedplus
+set ruler
 
-:start
+let g:xml_syntax_folding=1
+au BufWinEnter * normal zR
+
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+inoremap <F9> <C-O>za
+
+nnoremap <F3> :Autoformat<CR>
+vnoremap <F3> :Autoformat<CR>
+inoremap <F3> <C-O>:Autoformat<CR>
+
+let g:ycm_confirm_extra_conf = 0
+let g:syntastic_always_populate_loc_list = 1
+
+if $TERM !~ "putty"
+    let g:airline_powerline_fonts = 1
+endif
