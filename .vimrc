@@ -38,7 +38,7 @@ set ignorecase
 set smartcase
 
 set tabstop=4
-set shiftwidth=4 " vim-autoformat doesn't like 0
+set shiftwidth=4 " vim's = doesn't like 0
 
 set expandtab
 set smartindent
