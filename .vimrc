@@ -46,7 +46,7 @@ set smartindent
 
 set foldmethod=syntax
 
-function ExtendedHome()
+function s:ExtendedHome()
     let column = col('.')
     normal! ^
     if column == col('.')
@@ -54,8 +54,8 @@ function ExtendedHome()
     endif
 endfunction
 
-noremap <silent> <Home> :call ExtendedHome()<CR>
-inoremap <silent> <Home> <C-o>:call ExtendedHome()<CR>
+noremap <silent> <Home> :call <SID>ExtendedHome()<CR>
+inoremap <silent> <Home> <C-o>:call <SID>ExtendedHome()<CR>
 
 set viewoptions=cursor
 
