@@ -8,12 +8,15 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
+Plugin 'bling/vim-bufferline'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'coot/CRDispatcher'
 Plugin 'coot/EnchantedVim'
 Plugin 'derekwyatt/vim-fswitch'
 Plugin 'kien/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
 Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'sukima/xmledit'
 Plugin 'terryma/vim-multiple-cursors'
@@ -24,6 +27,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'unblevable/quick-scope'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/Smart-Home-Key'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 call vundle#end()
 
