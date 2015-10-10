@@ -21,6 +21,7 @@ Plugin 'rhysd/vim-clang-format'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'vim-scripts/Smart-Home-Key'
 
 call vundle#end()
 
@@ -46,16 +47,8 @@ set smartindent
 
 set foldmethod=syntax
 
-function s:ExtendedHome()
-    let column = col('.')
-    normal! ^
-    if column == col('.')
-        normal! 0
-    endif
-endfunction
-
-noremap <silent> <Home> :call <SID>ExtendedHome()<CR>
-inoremap <silent> <Home> <C-o>:call <SID>ExtendedHome()<CR>
+noremap <silent> <Home> :SmartHomeKey<CR>
+inoremap <silent> <Home> <C-o>:SmartHomeKey<CR>
 
 set viewoptions=cursor
 
