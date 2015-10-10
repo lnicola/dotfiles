@@ -57,6 +57,8 @@ endfunction
 noremap <silent> <Home> :call ExtendedHome()<CR>
 inoremap <silent> <Home> <C-o>:call ExtendedHome()<CR>
 
+set viewoptions=cursor
+
 au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
 
