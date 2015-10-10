@@ -20,6 +20,7 @@ Plugin 'sukima/xmledit'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 
