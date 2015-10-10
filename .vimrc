@@ -13,12 +13,12 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin 'coot/CRDispatcher'
 Plugin 'coot/EnchantedVim'
 Plugin 'derekwyatt/vim-fswitch'
-Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'sukima/xmledit'
+Plugin 'szw/vim-ctrlspace'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-endwise'
@@ -59,6 +59,8 @@ inoremap <silent> <Home> <C-o>:SmartHomeKey<CR>
 nnoremap <BS> X
 
 set viewoptions=cursor
+
+set hidden
 
 augroup session
     autocmd!
