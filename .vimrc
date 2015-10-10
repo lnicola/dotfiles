@@ -56,16 +56,26 @@ nnoremap <BS> X
 
 set viewoptions=cursor
 
-au BufWinLeave * silent! mkview
-au BufWinEnter * silent! loadview
+augroup session
+    autocmd!
+    autocmd BufWinLeave * silent! mkview
+    autocmd BufWinEnter * silent! loadview
+augroup END
 
-au BufWritePre * :%s/\s\+$//e
+augroup whitespace
+    autocmd!
+    au BufWritePre * :%s/\s\+$//e
+augroup END
 
 set clipboard=unnamedplus
 set ruler
 
 let g:xml_syntax_folding=1
-au BufWinEnter * normal zR
+
+augroup unfolding
+    autocmd!
+    au BufWinEnter * normal zR
+augroup END
 
 nnoremap <F9> za
 onoremap <F9> <C-C>za
