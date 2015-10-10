@@ -6,20 +6,22 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'Raimondi/delimitMate'
-Plugin 'tpope/vim-commentary'
+Plugin 'bling/vim-airline'
+Plugin 'Chiel92/vim-autoformat'
 Plugin 'coot/CRDispatcher'
 Plugin 'coot/EnchantedVim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/syntastic'
 Plugin 'sukima/xmledit'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'Chiel92/vim-autoformat'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'unblevable/quick-scope'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/Smart-Home-Key'
 
 call vundle#end()
@@ -73,6 +75,8 @@ inoremap <F3> <C-O>:Autoformat<CR>
 
 let g:ycm_confirm_extra_conf = 0
 let g:syntastic_always_populate_loc_list = 1
+
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 if $TERM !~ "putty"
     let g:airline_powerline_fonts = 1
