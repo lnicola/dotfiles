@@ -52,6 +52,8 @@ set foldmethod=syntax
 noremap <silent> <Home> :SmartHomeKey<CR>
 inoremap <silent> <Home> <C-o>:SmartHomeKey<CR>
 
+nnoremap <BS> X
+
 set viewoptions=cursor
 
 au BufWinLeave * silent! mkview
