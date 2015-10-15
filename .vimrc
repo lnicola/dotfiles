@@ -13,6 +13,7 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin 'coot/CRDispatcher'
 Plugin 'coot/EnchantedVim'
 Plugin 'derekwyatt/vim-fswitch'
+Plugin 'haya14busa/incsearch.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
@@ -33,9 +34,12 @@ call vundle#end()
 
 filetype plugin indent on
 
-au BufRead,BufNewFile *.txx set filetype=cpp
-au BufRead,BufNewFile *.txr set filetype=txr | set lisp
-au BufRead,BufNewFile *.tl set filetype=txl | set lisp
+augroup filetypes
+    autocmd!
+    autocmd BufRead,BufNewFile *.txx set filetype=cpp
+    autocmd BufRead,BufNewFile *.txr set filetype=txr | set lisp
+    autocmd BufRead,BufNewFile *.tl set filetype=txl | set lisp
+augroup END
 
 syntax on
 
@@ -70,7 +74,7 @@ augroup END
 
 augroup whitespace
     autocmd!
-    au BufWritePre * :%s/\s\+$//e
+    autocmd BufWritePre * :%s/\s\+$//e
 augroup END
 
 set clipboard=unnamedplus
@@ -80,7 +84,7 @@ let g:xml_syntax_folding=1
 
 augroup unfolding
     autocmd!
-    au BufWinEnter * normal zR
+    autocmd BufWinEnter * normal zR
 augroup END
 
 nnoremap <F9> za
@@ -91,6 +95,10 @@ inoremap <F9> <C-O>za
 nnoremap <F3> :Autoformat<CR>
 vnoremap <F3> :Autoformat<CR>
 inoremap <F3> <C-O>:Autoformat<CR>
+
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
 
 let g:ycm_confirm_extra_conf = 0
 let g:syntastic_always_populate_loc_list = 1
