@@ -25,7 +25,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'unblevable/quick-scope'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/Smart-Home-Key'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
