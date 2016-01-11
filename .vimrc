@@ -37,6 +37,8 @@ au BufRead,BufNewFile *.txx set filetype=cpp
 au BufRead,BufNewFile *.txr set filetype=txr | set lisp
 au BufRead,BufNewFile *.tl set filetype=txl | set lisp
 
+au FileType python setlocal textwidth=100
+
 syntax on
 
 set noswapfile
