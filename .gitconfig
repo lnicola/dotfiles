@@ -17,6 +17,8 @@
     smtpserver = mail.messagingengine.com
     smtpserverport = 587
     confirm = auto
+[color]
+	ui = true
 [color "branch"]
     current = yellow reverse
     local = yellow
