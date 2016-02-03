@@ -2,6 +2,7 @@ URxvt.perl-ext-common: default,selection-to-clipboard
 URxvt.iso14755: False
 URxvt.keysym.C-V: eval:paste_primary
 URxvt.scrollBar: false
+URxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
@@ -18,7 +19,7 @@ URxvt.secondaryScroll: 0
 !URxvt.background:       [90]#1B1D1E
 URxvt.cursorColor:      #0A9DFF
 URxvt.foreground:       #FFFFFF
-uRxvt.highlightColor:   #0A9DFF
+URxvt.highlightColor:   #0A9DFF
 
 URxvt.color0:           #000000
 URxvt.color1:           #FF0000
