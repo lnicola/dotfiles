@@ -1,26 +1,35 @@
 #!/bin/sh
-#
-# ~/.xinitrc
-#
-# Executed by startx (run your window manager from here)
 
-if [ -d /etc/X11/xinit/xinitrc.d ]; then
-  for f in /etc/X11/xinit/xinitrc.d/*; do
-    [ -x "$f" ] && . "$f"
-  done
-  unset f
+userresources=$HOME/.Xresources
+usermodmap=$HOME/.Xmodmap
+sysresources=/etc/X11/xinit/.Xresources
+sysmodmap=/etc/X11/xinit/.Xmodmap
+
+# merge in defaults and keymaps
+
+if [ -f $sysresources ]; then
+    xrdb -merge $sysresources
 fi
 
-xrdb -merge ~/.Xresources
+if [ -f $sysmodmap ]; then
+    xmodmap $sysmodmap
+fi
 
-unset LANG
-source ~/.profile
+if [ -f "$userresources" ]; then
+    xrdb -merge "$userresources"
+fi
 
-compton -b --config ~/.compton
+if [ -f "$usermodmap" ]; then
+    xmodmap "$usermodmap"
+fi
 
-exec startlxqt
+# start some nice programs
 
-# exec gnome-session
-# exec startkde
-# exec startxfce4
-# ...or the Window Manager of your choice
+if [ -d /etc/X11/xinit/xinitrc.d ] ; then
+ for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+  [ -x "$f" ] && . "$f"
+ done
+ unset f
+fi
+
+exec dbus-launch --exit-with-session startlxqt
