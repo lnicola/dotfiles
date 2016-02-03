@@ -39,6 +39,8 @@ augroup filetypes
     autocmd BufRead,BufNewFile *.tl set filetype=txl | set lisp
 augroup END
 
+au FileType python setlocal textwidth=100
+
 syntax on
 
 set noswapfile
