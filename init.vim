@@ -1,36 +1,36 @@
 let g:python_host_prog='/usr/bin/python2'
 
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'bling/vim-airline'
-Plugin 'bling/vim-bufferline'
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'coot/CRDispatcher'
-Plugin 'coot/EnchantedVim'
-Plugin 'derekwyatt/vim-fswitch'
-Plugin 'haya14busa/incsearch.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'Raimondi/delimitMate'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'sukima/xmledit'
-Plugin 'szw/vim-ctrlspace'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'unblevable/quick-scope'
-" Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-scripts/Smart-Home-Key'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-
-call vundle#end()
-
-filetype plugin indent on
+call plug#begin('~/.config/nvim/plugged')
+Plug 'airblade/vim-gitgutter'
+Plug 'bling/vim-airline'
+Plug 'bling/vim-bufferline'
+Plug 'Chiel92/vim-autoformat'
+Plug 'coot/CRDispatcher'
+Plug 'coot/EnchantedVim'
+Plug 'derekwyatt/vim-fswitch'
+Plug 'haya14busa/incsearch.vim'
+Plug 'majutsushi/tagbar'
+Plug 'Raimondi/delimitMate'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'sukima/xmledit'
+Plug 'szw/vim-ctrlspace'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'unblevable/quick-scope'
+" Plug 'Valloric/YouCompleteMe'
+Plug 'vim-scripts/Smart-Home-Key'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+call plug#end()
 
 augroup filetypes
     autocmd!
