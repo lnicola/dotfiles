@@ -15,7 +15,7 @@
 (global-set-key "\C-f" 'isearch-forward)
 (global-set-key "\C-o" 'find-file)
 (global-set-key "\C-s" 'save-buffer)
-(global-set-key "\C-w" 'kill-this-buffer)
+; (global-set-key "\C-w" 'kill-this-buffer)
 (global-set-key "\C-z" 'undo)
 (global-set-key [M-delete] 'delete-word)
 (global-set-key [M-backspace] 'backward-delete-word)
