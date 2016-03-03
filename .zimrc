@@ -1,2 +1,3 @@
+zmodules+=(archive)
 zhighlighters=(main brackets)
 zprompt_theme=eriner
