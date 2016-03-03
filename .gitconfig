@@ -4,6 +4,7 @@
     ci = commit
     ps = push
     pu = pull
+    pr = pull --rebase
     pullall = !bash -c \"git pull && git submodule update --init --recursive\"
 [diff]
     algorithm = patience
@@ -34,3 +35,6 @@
     untracked = cyan
 [credential]
 	helper = store
+[core]
+	autocrlf = input
+	safecrlf = true
