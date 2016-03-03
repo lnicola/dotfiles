@@ -34,7 +34,7 @@
     changed = green
     untracked = cyan
 [credential]
-	helper = store
+    helper = store
 [core]
-	autocrlf = input
-	safecrlf = true
+    autocrlf = input
+    safecrlf = true
