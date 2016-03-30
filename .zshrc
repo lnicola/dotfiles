@@ -6,6 +6,7 @@ alias vim=nvim
 
 export LANG=en_GB.UTF-8
 export EDITOR=nvim
+export DIFFPROG="nvim -d"
 export WORDCHARS=
 
 if [[ ! -d ~/.zsh/zsh-autosuggestions ]]; then
