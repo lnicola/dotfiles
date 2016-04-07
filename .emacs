@@ -78,6 +78,9 @@
                          ("melpa" . "http://melpa.org/packages/")))
 (package-initialize)
 
+(setq org-global-properties (quote (("Effort_ALL" . "0:30 1:00 1:30 2:00 3:00 4:00 6:00 8:00 10:00 20:00"))))
+(setq org-columns-default-format "%40ITEM %TODO %3PRIORITY %10TAGS %17Effort(Estimated Effort){:} %12CLOCKSUM")
+
 (require 'web-mode)
 
 (setq web-mode-enable-current-element-highlight t)
