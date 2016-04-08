@@ -30,6 +30,7 @@ Plug 'unblevable/quick-scope'
 " Plug 'Valloric/YouCompleteMe'
 Plug 'vim-scripts/Smart-Home-Key'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'chrisbra/SudoEdit.vim'
 call plug#end()
 
 augroup filetypes
