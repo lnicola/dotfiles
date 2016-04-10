@@ -42,8 +42,6 @@ augroup END
 
 au FileType python setlocal textwidth=100
 
-syntax on
-
 set noswapfile
 set lazyredraw
 
