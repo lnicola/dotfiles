@@ -1,6 +1,7 @@
 bindkey '\e^?' backward-kill-word
 
 alias vim=nvim
+alias la="ls -alh"
 
 #setopt combining_chars
 
