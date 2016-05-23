@@ -5,6 +5,7 @@
     ps = push
     pu = pull
     pr = pull --rebase
+    unp = log --branches --not --remotes --decorate --oneline
     pullall = !bash -c \"git pull && git submodule update --init --recursive\"
 [diff]
     algorithm = patience
