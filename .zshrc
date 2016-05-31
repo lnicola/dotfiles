@@ -2,6 +2,7 @@ bindkey '\e^?' backward-kill-word
 
 alias vim=nvim
 alias la="ls -alh"
+alias dus="du -ad1 | sort -h -k1"
 
 #setopt combining_chars
 
