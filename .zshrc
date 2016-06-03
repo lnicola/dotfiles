@@ -4,6 +4,7 @@ alias vim=nvim
 alias la="ls -alh"
 alias dus="du -ad1 | sort -h -k1"
 alias mc="mc -u"
+alias mv="mv -i"
 
 #setopt combining_chars
 
