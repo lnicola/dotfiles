@@ -23,4 +23,6 @@ if [[ ! -d ~/.zsh/zsh-autosuggestions ]]; then
     git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
 fi
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [[ -e ${ZDOTDIR:-${HOME}}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+    source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
