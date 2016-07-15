@@ -13,13 +13,17 @@ alias cp="cp -r"
 
 #setopt combining_chars
 
+export PATH=$PATH:~/.cargo/bin
+export CARGO_HOME=~/.cargo
+export RUST_NEW_ERROR_FORMAT=true
+
 export LANG=en_GB.UTF-8
+export LESS="-Ri +S"
 export EDITOR=nvim
 export DIFFPROG="nvim -d"
 export WORDCHARS=
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
 export NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-export LESS="-Ri +S"
 
 if [[ ! -d ~/.zsh/zsh-autosuggestions ]]; then
     git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
