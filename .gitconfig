@@ -19,6 +19,7 @@
     smtpserver = mail.messagingengine.com
     smtpserverport = 587
     confirm = auto
+    smtpuser = lnicola@fastmail.fm
 [color]
     ui = true
 [color "branch"]
@@ -36,6 +37,8 @@
     untracked = cyan
 [credential]
     helper = store
+[commit]
+    verbose = true
 [core]
     autocrlf = input
     safecrlf = true
