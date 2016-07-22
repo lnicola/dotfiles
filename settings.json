@@ -4,7 +4,12 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
+    "editor.formatOnType": true,
+    "editor.renderIndentGuides": true,
     "files.trimTrailingWhitespace": true,
+    "rust.rustLangSrcPath": "/usr/src/rust/src/",
+    "rust.cargoHomePath": "~/.cargo",
     "rust.formatOnSave": true,
-    "rust.checkOnSave": true
+    "rust.checkOnSave": true,
+    "rust.checkWith": "clippy"
 }
