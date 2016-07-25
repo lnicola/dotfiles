@@ -1,0 +1,7 @@
+\pset null "NULL"
+\set HISTSIZE 20000
+\timing
+\set PROMPT1 '(%n@%M:%>) [%/] > '
+\set PROMPT2 ''
+\encoding unicode
+\x auto
