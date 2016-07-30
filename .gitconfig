@@ -17,10 +17,9 @@
     name = Laurentiu Nicola
 [sendemail]
     smtpencryption = tls
-    smtpserver = mail.messagingengine.com
+    smtpserver = smtp.fastmail.com
     smtpserverport = 587
     confirm = auto
-    smtpuser = lnicola@fastmail.fm
 [color]
     ui = true
 [color "branch"]
