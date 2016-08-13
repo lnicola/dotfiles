@@ -4,9 +4,12 @@ fi
 
 bindkey '\e^?' backward-kill-word
 
+dus() {
+    du -ad1 "${1:-.}" | sort -h -k1
+}
+
 alias vim=nvim
 alias la="ls -alh"
-alias dus="du -ad1 | sort -h -k1"
 alias mc="mc -u"
 alias mv="mv -i"
 alias cp="cp -r"
