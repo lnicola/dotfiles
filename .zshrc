@@ -2,6 +2,10 @@ if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
   source ${ZDOTDIR:-${HOME}}/.zim/init.zsh
 fi
 
+if [[ -s /etc/profile.d/vte.sh ]]; then
+    source /etc/profile.d/vte.sh
+fi
+
 bindkey '\e^?' backward-kill-word
 
 dus() {
