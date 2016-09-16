@@ -1,4 +1,4 @@
-zmodules=(directory environment git history input utility custom \
+zmodules=(directory environment git history input utility meta custom \
           syntax-highlighting history-substring-search prompt completion \
           archive)
 
