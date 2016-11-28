@@ -4,5 +4,4 @@ zmodules=(directory environment git history input utility meta custom \
 
 zprompt_theme='eriner'
 zcorrection='true'
-zdouble_dot_expand='true'
 zhighlighters=(main brackets)
