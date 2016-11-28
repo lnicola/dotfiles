@@ -25,7 +25,7 @@ export CARGO_HOME=~/.cargo
 export RUST_NEW_ERROR_FORMAT=true
 
 export LANG=en_GB.UTF-8
-export LESS="-Ri +S"
+export LESS="-FX -Ri"
 export EDITOR=nvim
 export DIFFPROG="nvim -d"
 export WORDCHARS=
