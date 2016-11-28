@@ -4,6 +4,7 @@
     "editor.fontFamily": "'Fira Code', Consolas",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
+    "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.renderIndentGuides": true,
     "editor.wrappingColumn": -1,

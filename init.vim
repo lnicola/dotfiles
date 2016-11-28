@@ -42,7 +42,7 @@ augroup END
 
 au FileType python setlocal textwidth=100
 
-"set termguicolors
+set termguicolors
 
 set noswapfile
 set lazyredraw
