@@ -14,6 +14,8 @@
         "*.txx": "cpp"
     },
     "files.trimTrailingWhitespace": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
     "rust.rustLangSrcPath": "/usr/src/rust/src/",
     "rust.cargoHomePath": "~/.cargo",
     "rust.formatOnSave": true,
