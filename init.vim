@@ -67,6 +67,8 @@ set viewoptions=cursor
 
 set hidden
 
+set inccommand=split
+
 augroup session
     autocmd!
     autocmd BufWinLeave * silent! mkview
