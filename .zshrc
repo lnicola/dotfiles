@@ -9,7 +9,7 @@ fi
 bindkey '\e^?' backward-kill-word
 
 dus() {
-    du -ad1 "${1:-.}" | sort -h -k1
+    du -had1 "$@" | sort -hk1
 }
 
 alias vim=nvim
