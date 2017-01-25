@@ -28,7 +28,6 @@ export LESS="-FX -Ri"
 export EDITOR=nvim
 export DIFFPROG="nvim -d"
 export WORDCHARS=
-export NVIM_TUI_ENABLE_TRUE_COLOR=1
 export NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 # if [[ ! -d ~/.zsh/zsh-autosuggestions ]]; then
