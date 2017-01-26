@@ -32,4 +32,3 @@ alias cp="cp -r"
 set -x LESS "-FX -Ri"
 set -x EDITOR nvim
 set -x DIFFPROG "nvim -d"
-set -x NVIM_TUI_ENABLE_CURSOR_SHAPE 1
