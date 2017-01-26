@@ -1,3 +1,21 @@
+function __sk_history
+    history | sk --tiebreak begin -q (commandline) | read -l command
+
+    if test -n "$command"
+        commandline -rb (printf $command)
+    end
+
+    commandline -f repaint
+end
+
+set fish_user_paths ~/.cargo/bin /usr/local/bin
+
+function fish_user_key_bindings
+    command --search sk >/dev/null; and begin
+        bind \cr __sk_history
+    end
+end
+
 function dus
     du -had1 $argv | sort -hk1
 end
@@ -15,5 +33,3 @@ set -x LESS "-FX -Ri"
 set -x EDITOR nvim
 set -x DIFFPROG "nvim -d"
 set -x NVIM_TUI_ENABLE_CURSOR_SHAPE 1
-
-set fish_user_paths ~/.cargo/bin /usr/local/bin
