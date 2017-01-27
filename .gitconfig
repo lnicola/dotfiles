@@ -39,6 +39,3 @@
     helper = store
 [commit]
     verbose = true
-[core]
-    autocrlf = input
-    safecrlf = true
