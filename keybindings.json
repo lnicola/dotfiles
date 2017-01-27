@@ -33,5 +33,10 @@
         "key": "ctrl+k ctrl+f",
         "command": "editor.action.formatDocument",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl-j",
+        "command": "editor.action.joinLines",
+        "when": "editorTextFocus"
     }
 ]
