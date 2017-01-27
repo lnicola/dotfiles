@@ -14,6 +14,10 @@
         "*.txx": "cpp"
     },
     "files.trimTrailingWhitespace": true,
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "260"
+    ],
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
     "rust.rustLangSrcPath": "/usr/src/rust/src/",
