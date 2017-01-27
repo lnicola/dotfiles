@@ -1,5 +1,5 @@
 function __sk_history
-    history | sk --tiebreak begin -q (commandline) | read -l command
+    history | sk --tiebreak index -q (commandline) | read -l command
 
     if test -n "$command"
         commandline -rb (printf $command)
