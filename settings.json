@@ -5,6 +5,7 @@
     "editor.fontFamily": "'Fira Code', Consolas",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
+    "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.renderIndentGuides": true,
@@ -22,7 +23,5 @@
     "python.linting.pylintEnabled": false,
     "rust.rustLangSrcPath": "/usr/src/rust/src/",
     "rust.cargoHomePath": "~/.cargo",
-    "rust.formatOnSave": true,
-    "rust.checkOnSave": true,
-    "rust.checkWith": "clippy"
+    "rust.formatOnSave": true
 }
