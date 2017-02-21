@@ -1,5 +1,12 @@
 function __sk_history
-    history | sk --tiebreak index -q (commandline) | read -l command
+    set -l query (commandline)
+    set -l command
+
+    if test -n $query
+        history --search $query | sk --exact --tiebreak index -q $query | read command
+    else
+        history | sk --exact --tiebreak index | read command
+    end
 
     if test -n "$command"
         commandline -rb (printf $command)
