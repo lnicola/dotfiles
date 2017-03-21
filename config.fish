@@ -35,6 +35,7 @@ alias du="du -h"
 alias la="ls -alh"
 alias mv="mv -i"
 alias cp="cp -r"
+alias rgi="rg -i"
 
 set -x LESS "-FX -Ri"
 set -x EDITOR nvim
