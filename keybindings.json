@@ -38,5 +38,9 @@
         "key": "ctrl-j",
         "command": "editor.action.joinLines",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "workbench.action.zoomReset"
     }
 ]
