@@ -22,14 +22,12 @@ alias rgi="rg -i"
 
 export PATH=$PATH:~/.cargo/bin
 export CARGO_HOME=~/.cargo
-export RUST_NEW_ERROR_FORMAT=true
 
 export LANG=en_GB.UTF-8
 export LESS="-FX -Ri"
 export EDITOR=nvim
 export DIFFPROG="nvim -d"
 export WORDCHARS=
-export NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 if [[ ! -d ~/.zsh/zsh-autosuggestions ]]; then
     git clone -b develop --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
