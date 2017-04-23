@@ -16,6 +16,7 @@ alias vim=nvim
 alias la="ls -alh"
 alias mv="mv -i"
 alias cp="cp -r"
+alias rgi="rg -i"
 
 #setopt combining_chars
 
@@ -30,11 +31,10 @@ export DIFFPROG="nvim -d"
 export WORDCHARS=
 export NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
-# if [[ ! -d ~/.zsh/zsh-autosuggestions ]]; then
-#     git clone -b develop --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
-# fi
+if [[ ! -d ~/.zsh/zsh-autosuggestions ]]; then
+    git clone -b develop --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
+fi
 
-# if [[ -e ${ZDOTDIR:-${HOME}}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
-#     source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-#     ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=5
-# fi
+if [[ -e ${ZDOTDIR:-${HOME}}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+    source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
