@@ -11,7 +11,8 @@
     "editor.renderIndentGuides": true,
     "extensions.autoUpdate": true,
     "files.associations": {
-        "*.txx": "cpp"
+        "*.txx": "cpp",
+        "*.sql": "pgsql"
     },
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
@@ -22,5 +23,16 @@
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
     "rust.rustLangSrcPath": "~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/",
-    "rust.cargoHomePath": "~/.cargo"
+    "rust.cargoHomePath": "~/.cargo",
+    "rust.rls": {
+        "executable": "rustup",
+        "args": ["run", "nightly", "rls"]
+    },
+    "[cpp]": {
+        "editor.quickSuggestions": false
+    },
+    "[c]": {
+        "editor.quickSuggestions": false
+    },
+    "window.zoomLevel": 0
 }
