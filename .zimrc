@@ -1,7 +1,7 @@
-zmodules=(directory environment git history input utility meta custom \
+zmodules=(directory environment git git-info history input utility meta custom \
           syntax-highlighting history-substring-search prompt completion \
           archive)
 
 zprompt_theme='eriner'
-zcorrection='true'
+setopt correct
 zhighlighters=(main brackets)
