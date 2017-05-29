@@ -26,13 +26,13 @@
     "rust.cargoHomePath": "~/.cargo",
     "rust.rls": {
         "executable": "rustup",
-        "args": ["run", "nightly", "rls"]
+        "args": [
+            "run",
+            "nightly",
+            "rls"
+        ]
     },
-    "[cpp]": {
-        "editor.quickSuggestions": false
-    },
-    "[c]": {
-        "editor.quickSuggestions": false
-    },
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Default Light+",
+    "workbench.iconTheme": "vs-seti"
 }
