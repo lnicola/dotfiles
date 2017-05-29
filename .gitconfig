@@ -10,6 +10,7 @@
     pullall = !bash -c \"git pull && git submodule update --init --recursive\"
 [diff]
     algorithm = patience
+    indentHeuristic = on
 [push]
     default = simple
 [user]
