@@ -30,11 +30,3 @@ export LESS="-FX -Ri"
 export EDITOR=nvim
 export DIFFPROG="nvim -d"
 export WORDCHARS=
-
-if [[ ! -d ~/.zsh/zsh-autosuggestions ]]; then
-    git clone -b develop --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
-fi
-
-if [[ -e ${ZDOTDIR:-${HOME}}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
-    source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi

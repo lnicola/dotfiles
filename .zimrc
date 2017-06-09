@@ -1,6 +1,6 @@
 zmodules=(directory environment git git-info history input utility meta custom \
           syntax-highlighting history-substring-search prompt completion \
-          archive)
+          archive autosuggestions)
 
 zprompt_theme='eriner'
 setopt correct
