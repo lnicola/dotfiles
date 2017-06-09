@@ -1,6 +1,4 @@
 {
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
     "editor.autoClosingBrackets": false,
     "editor.fontFamily": "'Fira Code', Consolas",
     "editor.fontLigatures": true,
@@ -8,8 +6,6 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.renderIndentGuides": true,
-    "extensions.autoUpdate": true,
     "files.associations": {
         "*.txx": "cpp",
         "*.sql": "pgsql"
@@ -32,7 +28,8 @@
             "rls"
         ]
     },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Default Light+",
-    "workbench.iconTheme": "vs-seti"
+    "workbench.colorTheme": "Default Light+"
 }
