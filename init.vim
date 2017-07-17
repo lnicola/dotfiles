@@ -43,6 +43,8 @@ augroup END
 au FileType python setlocal textwidth=100
 
 set termguicolors
+set background=dark
+set mouse=a
 
 set noswapfile
 set lazyredraw
@@ -52,7 +54,6 @@ set smartcase
 
 set tabstop=4
 set shiftwidth=4 " = doesn't like sw=0
-
 set expandtab
 set smartindent
 
