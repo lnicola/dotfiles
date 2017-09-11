@@ -1,8 +1,8 @@
 {
+    "C_Cpp.intelliSenseEngine": "Default",
     "editor.autoClosingBrackets": false,
     "editor.fontFamily": "'Fira Code', Consolas",
     "editor.fontLigatures": true,
-    "editor.fontSize": 14,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -12,6 +12,7 @@
     },
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
     "python.formatting.autopep8Args": [
         "--max-line-length",
         "260"
@@ -20,17 +21,22 @@
     "python.linting.pylintEnabled": false,
     "rust.rustLangSrcPath": "~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/",
     "rust.cargoHomePath": "~/.cargo",
+    "rust.mode": "rls",
     "rust.rls": {
         "executable": "rustup",
         "args": [
             "run",
             "nightly",
             "rls"
-        ]
+        ],
+        "useRustfmt": true
+    },
+    "rust.rustup": {
+        "toolchain": "nightly-x86_64-unknown-linux-gnu"
     },
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "window.zoomLevel": 0,
     "workbench.colorTheme": "Default Light+",
-    "workbench.editor.enablePreview": false
+    "workbench.editor.enablePreview": false,
+    "window.zoomLevel": 0
 }
