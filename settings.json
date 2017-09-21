@@ -19,21 +19,9 @@
     ],
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    "rust.rustLangSrcPath": "~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/",
-    "rust.cargoHomePath": "~/.cargo",
-    "rust.mode": "rls",
-    "rust.rls": {
-        "executable": "rustup",
-        "args": [
-            "run",
-            "nightly",
-            "rls"
-        ],
-        "useRustfmt": true
-    },
-    "rust.rustup": {
-        "toolchain": "nightly-x86_64-unknown-linux-gnu"
-    },
+    "rust-client.setup_build_tasks_automatically": false,
+    "rust-client.showStdErr": true,
+    "rust-client.revealOutputChannelOn": "warn",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "workbench.colorTheme": "Default Light+",
