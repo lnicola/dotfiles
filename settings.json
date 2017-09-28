@@ -19,7 +19,6 @@
     ],
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    "rust-client.setup_build_tasks_automatically": false,
     "rust-client.showStdErr": true,
     "rust-client.revealOutputChannelOn": "warn",
     "telemetry.enableCrashReporter": false,
