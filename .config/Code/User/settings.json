@@ -19,10 +19,10 @@
     ],
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    "rust-client.showStdErr": true,
     "rust-client.revealOutputChannelOn": "warn",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "update.channel": "none",
     "workbench.colorTheme": "Default Light+",
     "workbench.editor.enablePreview": false,
     "window.zoomLevel": 0
