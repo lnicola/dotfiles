@@ -35,6 +35,16 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "ctrl-e",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl-shift-e",
+        "command": "cursorEndSelect",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "ctrl-j",
         "command": "editor.action.joinLines",
         "when": "editorTextFocus"
