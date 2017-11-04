@@ -47,25 +47,25 @@
     smtpserverport = 587
     confirm = auto
 [url "git://gist.github.com/"]
-	insteadOf = gist:
+    insteadOf = gist:
 [url "git://github.com/"]
-	insteadOf = github:
+    insteadOf = github:
 [url "git@bitbucket.org:"]
-	insteadOf = bb:
-	pushInsteadOf = bitbucket:
-	pushInsteadOf = git://bitbucket.org/
+    insteadOf = bb:
+    pushInsteadOf = bitbucket:
+    pushInsteadOf = git://bitbucket.org/
 [url "git@gist.github.com:"]
-	insteadOf = gst:
-	pushInsteadOf = gist:
-	pushInsteadOf = git://gist.github.com/
+    insteadOf = gst:
+    pushInsteadOf = gist:
+    pushInsteadOf = git://gist.github.com/
 [url "git@github.com:"]
-	insteadOf = gh:
-	pushInsteadOf = github:
-	pushInsteadOf = git://github.com/
+    insteadOf = gh:
+    pushInsteadOf = github:
+    pushInsteadOf = git://github.com/
 [url "git@gitlab.com:"]
-	insteadOf = gl:
-	pushInsteadOf = gitlab:
-	pushInsteadOf = git://gitlab.com/
+    insteadOf = gl:
+    pushInsteadOf = gitlab:
+    pushInsteadOf = git://gitlab.com/
 [user]
     email = lnicola@dend.ro
     name = Laurentiu Nicola
