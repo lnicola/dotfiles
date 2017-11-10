@@ -1,3 +1,5 @@
+export ZSH_AUTOSUGGEST_USE_ASYNC=1
+
 if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
   source ${ZDOTDIR:-${HOME}}/.zim/init.zsh
 fi
