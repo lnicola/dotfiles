@@ -13,6 +13,12 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "java.errors.incompleteClasspath.severity": "ignore",
+    "markdownlint.config": {
+        "MD025": false,
+        "MD026": {
+            "punctuation": ".,;:!"
+        }
+    },
     "python.formatting.autopep8Args": [
         "--max-line-length",
         "260"
