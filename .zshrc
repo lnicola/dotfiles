@@ -21,6 +21,7 @@ alias cp="cp -r"
 alias rgi="rg -i"
 
 #setopt combining_chars
+setopt noflowcontrol
 
 export PATH=$PATH:~/.cargo/bin
 
@@ -32,3 +33,5 @@ export LESS="-FX -Ri"
 export EDITOR=nvim
 export DIFFPROG="nvim -d"
 export WORDCHARS=
+
+stty -ixon
