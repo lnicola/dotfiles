@@ -1,8 +1,7 @@
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
 
-if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
-  source ${ZDOTDIR:-${HOME}}/.zim/init.zsh
-fi
+export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+[[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
 
 if [[ -s /etc/profile.d/vte.sh ]]; then
     source /etc/profile.d/vte.sh
@@ -22,6 +21,7 @@ alias rgi="rg -i"
 
 #setopt combining_chars
 setopt noflowcontrol
+setopt correct
 
 export PATH=$PATH:~/.cargo/bin
 
