@@ -26,7 +26,6 @@ setopt correct
 export PATH=$PATH:~/.cargo/bin
 
 export CARGO_HOME=~/.cargo
-export CARGO_INCREMENTAL=1
 
 export LANG=en_GB.UTF-8
 export LESS="-FX -Ri"
