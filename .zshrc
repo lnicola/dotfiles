@@ -1,5 +1,7 @@
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
 
+fpath+=~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/share/zsh/site-functions
+
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 [[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
 
