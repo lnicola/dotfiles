@@ -26,7 +26,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'unblevable/quick-scope'
+Plug 'bradford-smith94/quick-scope'
 " Plug 'Valloric/YouCompleteMe'
 Plug 'vim-scripts/Smart-Home-Key'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -56,6 +56,7 @@ set tabstop=4
 set shiftwidth=4 " = doesn't like sw=0
 set expandtab
 set smartindent
+set shiftround
 
 set foldmethod=syntax
 
@@ -81,10 +82,7 @@ augroup whitespace
     autocmd BufWritePre * :%s/\s\+$//e
 augroup END
 
-set clipboard=unnamedplus
-set ruler
-
-let g:xml_syntax_folding=1
+let g:xml_syntax_folding = 1
 
 augroup unfolding
     autocmd!
