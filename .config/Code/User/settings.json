@@ -25,11 +25,12 @@
     ],
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    "rust-client.revealOutputChannelOn": "warn",
+    "rust-client.revealOutputChannelOn": "info",
+    "search.smartCase": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "update.channel": "none",
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "Default Light+",
-    "workbench.editor.enablePreview": false,
-    "window.zoomLevel": 0
+    "workbench.editor.enablePreview": false
 }
