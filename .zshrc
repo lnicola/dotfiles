@@ -28,7 +28,7 @@ setopt correct
 export PATH=$PATH:~/.cargo/bin
 
 export CARGO_HOME=~/.cargo
-
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export LANG=en_GB.UTF-8
 export LESS="-FX -Ri"
 export EDITOR=nvim
