@@ -1,3 +1,4 @@
+user_pref("app.normandy.enabled", false);
 user_pref("beacon.enabled", false);
 user_pref("browser.library.activity-stream.enabled", false);
 user_pref("browser.newtabpage.activity-stream.enabled", false);
@@ -7,7 +8,6 @@ user_pref("browser.safebrowsing.phishing.enabled", false);
 user_pref("dom.battery.enabled", false);
 user_pref("experiments.enabled", false);
 user_pref("extensions.pocket.enabled", false);
-user_pref("extensions.shield-recipe-client.enabled", false);
 user_pref("media.eme.enabled", false);
 user_pref("privacy.donottrackheader.enabled", true);
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
