@@ -1,6 +1,10 @@
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
 
-fpath+=~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/share/zsh/site-functions
+export PATH=$PATH:~/.cargo/bin
+
+local rust_root=$(rustc --print sysroot)
+export LD_LIBRARY_PATH=$rust_root/lib:$LD_LIBRARY_PATH
+fpath+=$rust_root/share/zsh/site-functions
 
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 [[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
@@ -24,8 +28,6 @@ alias rgi="rg -i"
 #setopt combining_chars
 setopt noflowcontrol
 setopt correct
-
-export PATH=$PATH:~/.cargo/bin
 
 export CARGO_HOME=~/.cargo
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
