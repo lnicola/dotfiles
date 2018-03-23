@@ -8,5 +8,6 @@ user_pref("dom.battery.enabled", false);
 user_pref("experiments.enabled", false);
 user_pref("extensions.pocket.enabled", false);
 user_pref("media.eme.enabled", false);
+user_pref("network.IDN_show_punycode", true);
 user_pref("privacy.donottrackheader.enabled", true);
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
