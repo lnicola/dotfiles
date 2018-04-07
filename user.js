@@ -12,4 +12,3 @@ user_pref("media.navigator.enabled", false);
 user_pref("media.peerconnection.enabled", false);
 user_pref("network.IDN_show_punycode", true);
 user_pref("privacy.donottrackheader.enabled", true);
-user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
