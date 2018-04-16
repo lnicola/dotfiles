@@ -17,9 +17,9 @@ alias mv="mv -i"
 alias cp="cp -r"
 alias rgi="rg -i"
 
-#setopt combining_chars
-setopt noflowcontrol
+setopt combining_chars
 setopt correct
+setopt noflowcontrol
 
 export CARGO_HOME=~/.cargo
 export PATH=$PATH:~/.cargo/bin
