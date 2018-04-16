@@ -7,8 +7,6 @@ if [[ -s /etc/profile.d/vte.sh ]]; then
     source /etc/profile.d/vte.sh
 fi
 
-bindkey '\e^?' backward-kill-word
-
 dus() {
     du -had1 "$@" | sort -hk1
 }
