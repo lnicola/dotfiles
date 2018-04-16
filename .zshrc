@@ -1,11 +1,5 @@
+fpath+=$(rustc --print sysroot)/share/zsh/site-functions
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
-
-export PATH=$PATH:~/.cargo/bin
-
-local rust_root=$(rustc --print sysroot)
-export LD_LIBRARY_PATH=$rust_root/lib:$LD_LIBRARY_PATH
-fpath+=$rust_root/share/zsh/site-functions
-
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 [[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
 
@@ -30,6 +24,7 @@ setopt noflowcontrol
 setopt correct
 
 export CARGO_HOME=~/.cargo
+export PATH=$PATH:~/.cargo/bin
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export LANG=en_GB.UTF-8
 export LESS="-FX -Ri"
