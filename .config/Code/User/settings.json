@@ -7,8 +7,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "files.associations": {
-        "*.txx": "cpp",
-        "*.sql": "pgsql"
+        "*.txx": "cpp"
     },
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
