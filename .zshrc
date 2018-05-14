@@ -21,6 +21,8 @@ setopt combining_chars
 setopt correct
 setopt noflowcontrol
 
+bindkey "^[OM" accept-line
+
 export CARGO_HOME=~/.cargo
 export PATH=$PATH:~/.cargo/bin
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
