@@ -31,6 +31,8 @@ Plug 'bradford-smith94/quick-scope'
 Plug 'vim-scripts/Smart-Home-Key'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'chrisbra/SudoEdit.vim'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': './install.sh' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 augroup filetypes
@@ -41,6 +43,8 @@ augroup filetypes
 augroup END
 
 au FileType python setlocal textwidth=100
+
+highlight Pmenu guibg=brown gui=bold
 
 set termguicolors
 set background=dark
@@ -102,9 +106,13 @@ map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
-let g:ycm_confirm_extra_conf = 0
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+
+" let g:ycm_confirm_extra_conf = 0
 let g:syntastic_always_populate_loc_list = 1
-
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-
 let g:airline_powerline_fonts = 1
+let g:LanguageClient_serverCommands = { 'rust': ['rls'] }
+let g:deoplete#enable_at_startup = 1
