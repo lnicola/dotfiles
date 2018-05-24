@@ -5,7 +5,6 @@ user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.phishing.enabled", false);
 user_pref("dom.battery.enabled", false);
-user_pref("experiments.enabled", false);
 user_pref("extensions.pocket.enabled", false);
 user_pref("media.eme.enabled", false);
 user_pref("media.navigator.enabled", false);
