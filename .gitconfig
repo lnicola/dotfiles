@@ -39,6 +39,8 @@
     renames = copies
 [mergetool]
     keepBackup = false
+[pull]
+    ff = only
 [push]
     default = simple
 [sendemail]
@@ -46,6 +48,9 @@
     smtpserver = smtp.fastmail.com
     smtpserverport = 587
     confirm = auto
+[pager]
+    diff = diff-so-fancy | less
+    show = diff-so-fancy | less
 [url "git://gist.github.com/"]
     insteadOf = gist:
 [url "git://github.com/"]
