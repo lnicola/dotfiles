@@ -17,7 +17,7 @@ alias mv="mv -i"
 alias cp="cp -r"
 alias rgi="rg -i"
 alias cat="bat"
-alias ncdu="ncdu --color dark -rr"
+alias ncdu="ncdu --color dark"
 
 setopt combining_chars
 setopt correct
