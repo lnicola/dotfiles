@@ -1,5 +1,6 @@
 {
     "breadcrumbs.enabled": true,
+    "crates.upToDateDecorator": "",
     "editor.fontFamily": "'Fira Code'",
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
