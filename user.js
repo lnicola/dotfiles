@@ -1,4 +1,3 @@
-user_pref("app.normandy.enabled", false);
 user_pref("beacon.enabled", false);
 user_pref("browser.library.activity-stream.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
