@@ -1,3 +1,6 @@
+export CARGO_HOME=~/.cargo
+export PATH=$PATH:~/.cargo/bin
+
 fpath+=$(rustc --print sysroot)/share/zsh/site-functions
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
@@ -25,8 +28,6 @@ setopt noflowcontrol
 
 bindkey "^[OM" accept-line
 
-export CARGO_HOME=~/.cargo
-export PATH=$PATH:~/.cargo/bin
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export LANG=en_GB.UTF-8
 export LESS="-FX -Ri"
