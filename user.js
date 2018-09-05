@@ -1,10 +1,17 @@
 user_pref("beacon.enabled", false);
+user_pref("browser.contentblocking.enabled", false);
 user_pref("browser.library.activity-stream.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.phishing.enabled", false);
+user_pref("browser.tabs.drawInTitlebar", true);
 user_pref("dom.battery.enabled", false);
 user_pref("extensions.pocket.enabled", false);
+user_pref("general.autoScroll", true);
+user_pref("gfx.canvas.azure.accelerated", true);
+user_pref("javascript.options.asyncstack", false);
+user_pref("layers.acceleration.force-enabled", true);
+user_pref("layers.omtp.paint-workers", 4);
 user_pref("media.eme.enabled", false);
 user_pref("media.navigator.enabled", false);
 user_pref("media.peerconnection.enabled", false);
