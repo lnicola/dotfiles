@@ -22,6 +22,7 @@
         "--max-line-length",
         "260"
     ],
+    "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
     "rust.clippy_preference": "on",
