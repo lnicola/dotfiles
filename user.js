@@ -5,6 +5,7 @@ user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.phishing.enabled", false);
 user_pref("browser.tabs.drawInTitlebar", true);
+user_pref("browser.urlbar.matchBuckets", "general:5,suggestion:Infinity");
 user_pref("dom.battery.enabled", false);
 user_pref("extensions.pocket.enabled", false);
 user_pref("general.autoScroll", true);
