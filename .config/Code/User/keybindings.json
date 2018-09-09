@@ -50,10 +50,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+0",
-        "command": "workbench.action.zoomReset"
-    },
-    {
         "key": "alt+left",
         "command": "workbench.action.navigateBack"
     },
@@ -65,5 +61,29 @@
         "key": "f4",
         "command": "C_Cpp.SwitchHeaderSource",
         "when": "editorTextFocus"
-    }
+    },
+    {
+        "key": "ctrl+numpad_add",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "ctrl+numpad_subtract",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "ctrl+numpad0",
+        "command": "editor.action.fontZoomReset"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "editor.action.fontZoomReset"
+    },
 ]
