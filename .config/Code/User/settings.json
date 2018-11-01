@@ -1,5 +1,7 @@
 {
     "breadcrumbs.enabled": true,
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "cmake.configureOnOpen": true,
     "crates.upToDateDecorator": "",
     "editor.fontFamily": "'Fira Code'",
     "editor.fontLigatures": true,
