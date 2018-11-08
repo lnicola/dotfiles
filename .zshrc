@@ -19,7 +19,6 @@ alias la="ls -alh"
 alias mv="mv -i"
 alias cp="cp -r"
 alias rgi="rg -i"
-alias cat="bat"
 alias ncdu="ncdu --color dark"
 
 setopt combining_chars
