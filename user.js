@@ -9,7 +9,6 @@ user_pref("browser.urlbar.matchBuckets", "general:5,suggestion:Infinity");
 user_pref("dom.battery.enabled", false);
 user_pref("extensions.pocket.enabled", false);
 user_pref("general.autoScroll", true);
-user_pref("gfx.canvas.azure.accelerated", true);
 user_pref("javascript.options.asyncstack", false);
 user_pref("layers.acceleration.force-enabled", true);
 user_pref("layers.omtp.paint-workers", 4);
