@@ -21,6 +21,7 @@ alias cp="cp -r"
 alias rgi="rg -i"
 alias ncdu="ncdu --color dark"
 
+setopt autocontinue
 setopt combining_chars
 setopt correct
 setopt noflowcontrol
