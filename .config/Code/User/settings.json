@@ -34,7 +34,6 @@
     "telemetry.enableTelemetry": false,
     "update.channel": "none",
     "window.menuBarVisibility": "toggle",
-    "window.titleBarStyle": "custom",
     "workbench.colorTheme": "Default Light+",
     "workbench.editor.enablePreview": false,
     "workbench.enableExperiments": false,
