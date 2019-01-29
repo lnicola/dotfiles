@@ -12,7 +12,7 @@ user_pref("general.autoScroll", true);
 user_pref("javascript.options.asyncstack", false);
 user_pref("layers.acceleration.force-enabled", true);
 user_pref("layers.omtp.paint-workers", 4);
-user_pref("media.eme.enabled", false);
+user_pref("media.eme.enabled", true);
 user_pref("media.navigator.enabled", false);
 user_pref("media.peerconnection.enabled", false);
 user_pref("network.IDN_show_punycode", true);
