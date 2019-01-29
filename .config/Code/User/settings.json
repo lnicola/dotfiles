@@ -27,6 +27,7 @@
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
+    "rust-analyzer.highlightingOn": false,
     "rust.clippy_preference": "on",
     "search.smartCase": true,
     "telemetry.enableCrashReporter": false,
