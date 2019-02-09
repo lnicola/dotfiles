@@ -24,6 +24,7 @@
         "--max-line-length",
         "260"
     ],
+    "editor.cursorSmoothCaretAnimation": true,
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
@@ -34,10 +35,12 @@
     "telemetry.enableTelemetry": false,
     "update.channel": "none",
     "window.menuBarVisibility": "toggle",
+    "window.doubleClickIconToClose": true,
     "workbench.colorTheme": "Default Light+",
     "workbench.editor.enablePreview": false,
     "workbench.enableExperiments": false,
     "workbench.settings.editor": "json",
     "workbench.settings.enableNaturalLanguageSearch": false,
-    "workbench.tree.horizontalScrolling": true
+    "workbench.settings.useSplitJSON": true,
+    "workbench.tree.horizontalScrolling": true,
 }
