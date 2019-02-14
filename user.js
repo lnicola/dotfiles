@@ -28,6 +28,6 @@ user_pref("layers.acceleration.force-enabled", true);
 user_pref("layers.omtp.paint-workers", 4);
 user_pref("media.eme.enabled", true);
 user_pref("network.security.esni.enabled", true);
-user_pref("network.trr.mode", 3);
+user_pref("network.trr.mode", 2);
 user_pref("network.IDN_show_punycode", true);
 user_pref("privacy.donottrackheader.enabled", true);
