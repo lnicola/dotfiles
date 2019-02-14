@@ -37,6 +37,7 @@ set shiftround
 set foldmethod=syntax
 set hidden
 set inccommand=split
+set foldlevelstart=99
 
 highlight Pmenu guibg=brown gui=bold
 
@@ -48,11 +49,6 @@ nnoremap <BS> X
 augroup filetypes
     autocmd!
     autocmd FileType python setlocal textwidth=100
-augroup end
-
-augroup unfolding
-    autocmd!
-    autocmd BufWinEnter * normal zR
 augroup end
 
 nnoremap <F9> za
