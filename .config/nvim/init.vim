@@ -10,7 +10,7 @@ Plug 'bling/vim-airline'
 Plug 'bling/vim-bufferline'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'w0rp/ale'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'sukima/xmledit'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-commentary'
@@ -58,19 +58,17 @@ onoremap <F9> <C-C>za
 vnoremap <F9> zf
 inoremap <F9> <C-O>za
 
-map K <Plug>(ale_hover)
-map gd <Plug>(ale_go_to_definition)
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 let g:xml_syntax_folding = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 let g:airline_powerline_fonts = 1
-let g:ale_completion_enabled = 1
-let g:ale_linters = {'rust': ['rls']}
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'rust': ['rustfmt'],
-\}
-let g:ale_fix_on_save = 1
 let g:deoplete#enable_at_startup = 1
 let g:neosnippet#enable_complete_done = 1
+let g:LanguageClient_serverCommands = {
+\   'rust': ['ra_lsp_server'],
+\}
