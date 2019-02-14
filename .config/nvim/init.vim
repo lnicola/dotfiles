@@ -20,6 +20,8 @@ Plug 'bradford-smith94/quick-scope'
 Plug 'vim-scripts/Smart-Home-Key'
 Plug 'chrisbra/SudoEdit.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
 call plug#end()
 
 set termguicolors
@@ -71,3 +73,4 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 let g:deoplete#enable_at_startup = 1
+let g:neosnippet#enable_complete_done = 1
