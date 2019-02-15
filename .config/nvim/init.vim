@@ -25,7 +25,6 @@ Plug 'Shougo/neosnippet-snippets'
 call plug#end()
 
 set termguicolors
-set background=dark
 set mouse=a
 set noswapfile
 set lazyredraw
