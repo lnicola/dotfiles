@@ -11,6 +11,8 @@ user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.phishing.enabled", false);
 user_pref("browser.startup.page", 3);
 user_pref("browser.tabs.drawInTitlebar", true);
+user_pref("browser.urlbar.clickSelectsAll", true);
+user_pref("browser.urlbar.doubleClickSelectsAll", false);
 user_pref("browser.urlbar.matchBuckets", "general:5,suggestion:Infinity");
 user_pref("dom.forms.autocomplete.formautofill", true);
 user_pref("dom.ipc.processCount", 128);
