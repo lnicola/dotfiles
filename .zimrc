@@ -1,4 +1,4 @@
-zmodules=(directory environment git git-info history input utility custom \
+zmodules=(directory environment git-info history input utility custom \
           prompt completion history-substring-search \
           archive autosuggestions)
 
