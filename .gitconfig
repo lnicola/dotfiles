@@ -43,6 +43,8 @@
     ff = only
 [push]
     default = simple
+[rebase]
+    autoStash = true
 [sendemail]
     smtpencryption = tls
     smtpserver = smtp.fastmail.com
