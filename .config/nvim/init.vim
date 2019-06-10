@@ -38,6 +38,7 @@ set shiftround
 set foldmethod=syntax
 set hidden
 set inccommand=split
+set nomodeline
 set foldlevelstart=99
 
 highlight Pmenu guibg=brown gui=bold
