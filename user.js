@@ -23,7 +23,6 @@ user_pref("general.smoothScroll", false);
 user_pref("gfx.webrender.all", true);
 user_pref("intl.accept_languages", "en,ro");
 user_pref("javascript.options.asyncstack", false);
-user_pref("layers.acceleration.force-enabled", true);
 user_pref("layers.omtp.paint-workers", 4);
 user_pref("media.eme.enabled", true);
 user_pref("network.IDN_show_punycode", true);
