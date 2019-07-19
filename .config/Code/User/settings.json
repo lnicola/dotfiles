@@ -10,7 +10,7 @@
     "editor.formatOnType": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "files.associations": {
-        "*.txx": "cpp"
+        "*.txx": "cpp",
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -18,12 +18,12 @@
     "markdownlint.config": {
         "MD025": false,
         "MD026": {
-            "punctuation": ".,;:!"
+            "punctuation": ".,;:!",
         }
     },
     "python.formatting.autopep8Args": [
         "--max-line-length",
-        "260"
+        "260",
     ],
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
@@ -31,6 +31,7 @@
     "rust-analyzer.enableCargoWatchOnStartup": "enabled",
     "rust-analyzer.showWorkspaceLoadedNotification": false,
     "rust-analyzer.highlightingOn": true,
+    "rust-analyzer.rainbowHighlightingOn": true,
     "search.smartCase": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -45,5 +46,5 @@
     "workbench.settings.editor": "json",
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.settings.openDefaultKeybindings": true,
-    "workbench.settings.useSplitJSON": true
+    "workbench.settings.useSplitJSON": true,
 }
