@@ -1,5 +1,4 @@
 export CARGO_HOME=~/.cargo
-export PATH=$PATH:~/.cargo/bin
 
 fpath+=$(rustc --print sysroot)/share/zsh/site-functions
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
