@@ -20,7 +20,6 @@ user_pref("extensions.formautofill.creditCards.available", true);
 user_pref("extensions.pocket.enabled", false);
 user_pref("general.autoScroll", true);
 user_pref("general.smoothScroll", false);
-user_pref("intl.accept_languages", "en,ro");
 user_pref("javascript.options.asyncstack", false);
 user_pref("layers.omtp.paint-workers", 4);
 user_pref("media.eme.enabled", true);
