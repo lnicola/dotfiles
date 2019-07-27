@@ -31,7 +31,7 @@
     "rust-analyzer.enableCargoWatchOnStartup": "enabled",
     "rust-analyzer.showWorkspaceLoadedNotification": false,
     "rust-analyzer.highlightingOn": true,
-    "rust-analyzer.rainbowHighlightingOn": true,
+    "rust-analyzer.rainbowHighlightingOn": false,
     "search.smartCase": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
