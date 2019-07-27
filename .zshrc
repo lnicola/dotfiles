@@ -1,5 +1,4 @@
 if [[ -x $(command -v rustc) ]]; then
-    export CARGO_HOME=~/.cargo
     fpath+=$(rustc --print sysroot)/share/zsh/site-functions
 fi
 
