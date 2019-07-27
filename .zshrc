@@ -1,6 +1,8 @@
-export CARGO_HOME=~/.cargo
+if [[ -x $(command -v rustc) ]]; then
+    export CARGO_HOME=~/.cargo
+    fpath+=$(rustc --print sysroot)/share/zsh/site-functions
+fi
 
-fpath+=$(rustc --print sysroot)/share/zsh/site-functions
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 [[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
@@ -13,7 +15,9 @@ dus() {
     du -had1 "$@" | sort -hk1
 }
 
-alias vim=nvim
+if [[ -x $(command -v nvim) ]]; then
+    alias vim=nvim
+fi
 alias la="ls -alh"
 alias mv="mv -i"
 alias cp="cp -r"
