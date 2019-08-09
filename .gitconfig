@@ -37,6 +37,8 @@
     indentHeuristic = on
     mnemonicPrefix = true
     renames = copies
+[merge]
+    conflictstyle = diff3
 [mergetool]
     keepBackup = false
 [pull]
