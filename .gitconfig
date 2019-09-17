@@ -37,6 +37,8 @@
     indentHeuristic = on
     mnemonicPrefix = true
     renames = copies
+[log]
+    mailmap = true
 [merge]
     conflictstyle = diff3
 [mergetool]
