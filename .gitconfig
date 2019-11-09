@@ -62,6 +62,8 @@
     log = diffr --colors added:background:none:foreground:green --colors removed:background:none:foreground:red --colors refine-added:background:none:foreground:green:bold --colors refine-removed:background:none:foreground:red:bold | less -R
     diff = diffr --colors added:background:none:foreground:green --colors removed:background:none:foreground:red --colors refine-added:background:none:foreground:green:bold --colors refine-removed:background:none:foreground:red:bold | less -R
     show = diffr --colors added:background:none:foreground:green --colors removed:background:none:foreground:red --colors refine-added:background:none:foreground:green:bold --colors refine-removed:background:none:foreground:red:bold | less -R
+[protocol]
+    version = 2
 [url "git://gist.github.com/"]
     insteadOf = gist:
 [url "git://github.com/"]
