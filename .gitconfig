@@ -30,6 +30,8 @@
     untracked = cyan
 [commit]
     verbose = true
+[core]
+	untrackedCache = true
 [credential]
     helper = store
 [diff]
@@ -37,6 +39,8 @@
     indentHeuristic = on
     mnemonicPrefix = true
     renames = copies
+[index]
+	version = 4
 [log]
     mailmap = true
 [merge]
