@@ -1,28 +1,28 @@
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+if empty(glob('~/.config/nvim/autoload/plugpac.vim'))
+  silent !curl -fLo ~/.config/nvim/autoload/plugpac.vim --create-dirs https://raw.githubusercontent.com/bennyyip/plugpac.vim/master/plugpac.vim
+  silent !git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/minpac
+  autocmd VimEnter * PackInstall
 endif
 
-call plug#begin('~/.config/nvim/plugged')
-Plug 'airblade/vim-gitgutter'
-Plug 'bling/vim-airline'
-Plug 'bling/vim-bufferline'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
-Plug 'sukima/xmledit'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'bradford-smith94/quick-scope'
-Plug 'vim-scripts/Smart-Home-Key'
-Plug 'chrisbra/SudoEdit.vim'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
-call plug#end()
+call plugpac#begin()
+Pack 'airblade/vim-gitgutter'
+Pack 'bling/vim-airline'
+Pack 'bling/vim-bufferline'
+Pack 'scrooloose/nerdtree'
+Pack 'Xuyuanp/nerdtree-git-plugin'
+Pack 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': {-> system('bash install.sh') } }
+Pack 'sukima/xmledit'
+Pack 'terryma/vim-multiple-cursors'
+Pack 'tpope/vim-commentary'
+Pack 'tpope/vim-fugitive'
+Pack 'tpope/vim-surround'
+Pack 'bradford-smith94/quick-scope'
+Pack 'vim-scripts/Smart-Home-Key'
+Pack 'chrisbra/SudoEdit.vim'
+Pack 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Pack 'Shougo/neosnippet.vim'
+Pack 'Shougo/neosnippet-snippets'
+call plugpac#end()
 
 set termguicolors
 set mouse=a
