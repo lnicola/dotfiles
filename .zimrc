@@ -1,6 +1,14 @@
-zmodules=(directory environment git-info history input utility custom \
-          prompt completion history-substring-search \
-          archive autosuggestions)
+zmodule environment
+zmodule input
+zmodule termtitle
+zmodule utility
 
-zprompt_theme='eriner'
-ztermtitle='%n@%m:%~'
+zmodule git-info
+zmodule eriner
+
+zmodule zsh-users/zsh-completions
+zmodule completion
+zmodule archive
+zmodule zsh-users/zsh-autosuggestions
+zmodule zsh-users/zsh-syntax-highlighting
+zmodule zsh-users/zsh-history-substring-search

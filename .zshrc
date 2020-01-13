@@ -1,10 +1,35 @@
-if [[ -x $(command -v rustc) ]]; then
-    fpath+=$(rustc --print sysroot)/share/zsh/site-functions
+setopt HIST_IGNORE_ALL_DUPS
+
+bindkey -e
+
+#setopt CORRECT
+#SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
+
+WORDCHARS=${WORDCHARS//[\/]}
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+export ZSH_AUTOSUGGEST_USE_ASYNC=1
+
+if [[ ${ZIM_HOME}/init.zsh -ot ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
+  # Update static initialization script if it's outdated, before sourcing it
+  source ${ZIM_HOME}/zimfw.zsh init -q
+fi
+source ${ZIM_HOME}/init.zsh
+
+# Bind ^[[A/^[[B manually so up/down works both before and after zle-line-init
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# Bind up and down keys
+zmodload -F zsh/terminfo +p:terminfo
+if [[ -n ${terminfo[kcuu1]} && -n ${terminfo[kcud1]} ]]; then
+  bindkey ${terminfo[kcuu1]} history-substring-search-up
+  bindkey ${terminfo[kcud1]} history-substring-search-down
 fi
 
-export ZSH_AUTOSUGGEST_USE_ASYNC=1
-export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
-[[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 if [[ -s /etc/profile.d/vte.sh ]]; then
     source /etc/profile.d/vte.sh
