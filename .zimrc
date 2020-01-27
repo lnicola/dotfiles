@@ -4,11 +4,12 @@ zmodule termtitle
 zmodule utility
 
 zmodule git-info
-zmodule eriner
+zmodule archive
 
+zmodule romkatv/powerlevel10k
 zmodule zsh-users/zsh-completions
 zmodule completion
-zmodule archive
 zmodule zsh-users/zsh-autosuggestions
 zmodule zsh-users/zsh-syntax-highlighting
 zmodule zsh-users/zsh-history-substring-search
+zmodule romkatv/powerlevel10k
