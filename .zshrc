@@ -8,6 +8,10 @@ setopt HIST_IGNORE_ALL_DUPS
 
 bindkey -e
 
+if [[ -x $(command -v rustc) ]]; then
+    fpath+=$(rustc --print sysroot)/share/zsh/site-functions
+fi
+
 #setopt CORRECT
 #SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
 
