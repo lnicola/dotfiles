@@ -29,7 +29,6 @@
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    "rust-analyzer.enableCargoWatchOnStartup": "enabled",
     "rust-analyzer.highlightingOn": true,
     "rust-analyzer.rainbowHighlightingOn": false,
     "search.smartCase": true,
