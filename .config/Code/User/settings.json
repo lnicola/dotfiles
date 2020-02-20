@@ -9,6 +9,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.multiCursorModifier": "ctrlCmd",
+    "editor.semanticHighlighting.enabled": true,
     "files.associations": {
         "*.txx": "cpp",
     },
@@ -31,6 +32,7 @@
     "python.linting.pylintEnabled": false,
     "rust-analyzer.highlightingOn": true,
     "rust-analyzer.rainbowHighlightingOn": false,
+    "rust-analyzer.serverPath": "rust-analyzer",
     "search.smartCase": true,
     "spellright.language": [
         "en-GB"
@@ -38,6 +40,7 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "update.mode": "none",
+    "window.autoDetectColorScheme": true,
     "window.doubleClickIconToClose": true,
     "window.menuBarVisibility": "toggle",
     "window.titleBarStyle": "custom",
