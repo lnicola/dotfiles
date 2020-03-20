@@ -30,8 +30,8 @@
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
+    "rust-analyzer.cargoFeatures.loadOutDirsFromCheck": true,
     "rust-analyzer.highlightingOn": true,
-    "rust-analyzer.rainbowHighlightingOn": false,
     "rust-analyzer.serverPath": "rust-analyzer",
     "search.smartCase": true,
     "spellright.language": [
