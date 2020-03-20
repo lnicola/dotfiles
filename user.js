@@ -23,7 +23,6 @@ user_pref("fission.autostart", true);
 user_pref("general.autoScroll", true);
 user_pref("general.smoothScroll", false);
 user_pref("javascript.options.asyncstack", false);
-user_pref("layers.omtp.paint-workers", 4);
 user_pref("media.eme.enabled", true);
 user_pref("network.IDN_show_punycode", true);
 user_pref("network.security.esni.enabled", true);
