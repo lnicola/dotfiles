@@ -13,8 +13,6 @@ user_pref("browser.safebrowsing.phishing.enabled", false);
 user_pref("browser.search.widget.inNavBar", true);
 user_pref("browser.startup.page", 3);
 user_pref("browser.tabs.drawInTitlebar", true);
-user_pref("browser.urlbar.clickSelectsAll", true);
-user_pref("browser.urlbar.doubleClickSelectsAll", false);
 user_pref("browser.urlbar.suggest.searches", false);
 user_pref("dom.forms.autocomplete.formautofill", true);
 user_pref("extensions.formautofill.creditCards.available", true);
