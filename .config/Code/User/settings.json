@@ -9,7 +9,12 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.semanticHighlighting.enabled": true,
+    "editor.tokenColorCustomizationsExperimental": {
+        "*.mutable": {
+            "fontStyle": "underline"
+        },
+        "unresolvedReference": "#FF0000"
+    },
     "files.associations": {
         "*.txx": "cpp",
     },
@@ -30,7 +35,6 @@
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    "rust-analyzer.highlightingOn": true,
     "rust-analyzer.cargo.loadOutDirsFromCheck": true,
     "rust-analyzer.procMacro.enabled": true,
     "search.smartCase": true,
