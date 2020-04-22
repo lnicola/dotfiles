@@ -51,4 +51,7 @@
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.settings.openDefaultKeybindings": true,
     "workbench.settings.useSplitJSON": true,
+    "[python]": {
+        "editor.formatOnPaste": false
+    }
 }
