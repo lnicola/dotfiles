@@ -8,11 +8,10 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.tokenColorCustomizationsExperimental": {
-        "*.mutable": {
-            "fontStyle": "underline"
-        },
-        "unresolvedReference": "#FF0000"
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            "unresolvedReference": "#ff0000",
+        }
     },
     "files.associations": {
         "*.txx": "cpp",
