@@ -22,6 +22,7 @@ Pack 'chrisbra/SudoEdit.vim'
 Pack 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Pack 'Shougo/neosnippet.vim'
 Pack 'Shougo/neosnippet-snippets'
+Pack 'junegunn/fzf'
 call plugpac#end()
 
 set termguicolors
@@ -70,5 +71,5 @@ let g:airline_powerline_fonts = 1
 let g:deoplete#enable_at_startup = 1
 let g:neosnippet#enable_complete_done = 1
 let g:LanguageClient_serverCommands = {
-\   'rust': ['ra_lsp_server'],
+\   'rust': ['rust-analyzer'],
 \}
