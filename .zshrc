@@ -46,7 +46,7 @@ if [[ -s /etc/profile.d/vte.sh ]]; then
 fi
 
 dus() {
-    du -had1 "$@" | sort -hk1
+    du -had1 "$@" | sort -hk1,1
 }
 
 if [[ -x $(command -v nvim) ]]; then
