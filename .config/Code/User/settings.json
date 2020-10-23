@@ -17,6 +17,7 @@
     "evenBetterToml.formatter.alignEntries": false,
     "evenBetterToml.formatter.reorderKeys": false,
     "evenBetterToml.schema.enabled": true,
+    "extensions.ignoreRecommendations": true,
     "files.associations": {
         "*.txx": "cpp",
     },
