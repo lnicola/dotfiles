@@ -1,7 +1,7 @@
 {
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
     "cmake.configureOnOpen": true,
-    "crates.upToDateDecorator": "",
+    "crates.compatibleDecorator": "",
     "editor.fontFamily": "'Fira Code'",
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
