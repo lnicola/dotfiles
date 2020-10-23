@@ -24,6 +24,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "java.errors.incompleteClasspath.severity": "ignore",
+    "javascript.format.semicolons": "insert",
     "markdownlint.config": {
         "MD025": false,
         "MD026": {
