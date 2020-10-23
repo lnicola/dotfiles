@@ -25,7 +25,7 @@ user_pref("gfx.color_management.mode", 1);
 user_pref("gfx.webrender.compositor", true);
 user_pref("javascript.options.asyncstack", false);
 user_pref("media.eme.enabled", true);
-user_pref("media.ffvpx.enabled", true);
+user_pref("media.ffvpx.enabled", false);
 user_pref("network.IDN_show_punycode", true);
 user_pref("network.security.esni.enabled", true);
 user_pref("network.trr.bootstrapAddress", "1.1.1.1");
