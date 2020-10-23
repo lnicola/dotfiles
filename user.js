@@ -20,6 +20,8 @@ user_pref("extensions.pocket.enabled", false);
 user_pref("fission.autostart", true);
 user_pref("general.autoScroll", true);
 user_pref("general.smoothScroll", false);
+user_pref("gfx.color_management.enablev4", true);
+user_pref("gfx.color_management.mode", 1);
 user_pref("gfx.webrender.compositor", true);
 user_pref("javascript.options.asyncstack", false);
 user_pref("media.eme.enabled", true);
