@@ -45,6 +45,11 @@
     "spellright.language": [
         "en-GB"
     ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "update.mode": "none",
