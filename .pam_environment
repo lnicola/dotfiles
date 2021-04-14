@@ -1,5 +1,4 @@
 PATH DEFAULT=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:@{HOME}/.cargo/bin:@{HOME}/.local/bin
-DOTNET_CLI_TELEMETRY_OPTOUT=1
 LANG=en_GB.UTF-8
 MOZ_GTK_TITLEBAR_DECORATION=client
 MOZ_ENABLE_WAYLAND=1
