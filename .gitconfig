@@ -31,7 +31,7 @@
 [commit]
     verbose = true
 [core]
-	untrackedCache = true
+    untrackedCache = true
 [credential]
     helper = store
 [diff]
@@ -40,12 +40,14 @@
     mnemonicPrefix = true
     renames = copies
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 [index]
-	version = 4
+    version = 4
+[init]
+    defaultBranch = master
 [log]
     mailmap = true
 [merge]
