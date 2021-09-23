@@ -10,7 +10,10 @@ Pack 'bling/vim-airline'
 Pack 'bling/vim-bufferline'
 Pack 'scrooloose/nerdtree'
 Pack 'Xuyuanp/nerdtree-git-plugin'
-Pack 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': {-> system('bash install.sh') } }
+Pack 'neovim/nvim-lspconfig'
+Pack 'nvim-lua/lsp_extensions.nvim'
+Pack 'nvim-lua/completion-nvim'
+Pack 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Pack 'sukima/xmledit'
 Pack 'terryma/vim-multiple-cursors'
 Pack 'tpope/vim-commentary'
@@ -19,10 +22,8 @@ Pack 'tpope/vim-surround'
 Pack 'bradford-smith94/quick-scope'
 Pack 'vim-scripts/Smart-Home-Key'
 Pack 'chrisbra/SudoEdit.vim'
-Pack 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Pack 'Shougo/neosnippet.vim'
-Pack 'Shougo/neosnippet-snippets'
 Pack 'junegunn/fzf'
+Pack 'easymotion/vim-easymotion'
 call plugpac#end()
 
 set termguicolors
@@ -59,18 +60,83 @@ onoremap <F9> <C-C>za
 vnoremap <F9> zf
 inoremap <F9> <C-O>za
 
-nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-nnoremap <F6> :call LanguageClient_textDocument_codeAction()<CR>
-nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
-
 let g:xml_syntax_folding = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 let g:airline_powerline_fonts = 1
-let g:deoplete#enable_at_startup = 1
-let g:neosnippet#enable_complete_done = 1
-let g:LanguageClient_serverCommands = {
-\   'rust': ['rust-analyzer'],
-\}
+
+lua << EOF
+local nvim_lsp = require'lspconfig'
+
+local on_attach = function(client)
+    require'completion'.on_attach(client)
+end
+
+nvim_lsp.rust_analyzer.setup({
+    on_attach=on_attach,
+    settings = {
+        ["rust-analyzer"] = {
+            assist = {
+                importMergeBehavior = "last",
+                importPrefix = "by_self",
+            },
+            cargo = {
+                loadOutDirsFromCheck = true,
+                allFeatures = true,
+            },
+            procMacro = {
+                enable = true
+            },
+        }
+    }
+})
+
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+    vim.lsp.diagnostic.on_publish_diagnostics, {
+        virtual_text = true,
+        signs = true,
+        update_in_insert = true,
+    }
+)
+
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+  },
+  indent = {
+    enable = true,
+  },
+}
+EOF
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+imap <Tab> <Plug>(completion_smart_tab)
+imap <S-Tab> <Plug>(completion_smart_s_tab)
+
+set completeopt=menuone,noinsert,noselect
+let g:completion_sorting = "none"
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
+
+nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> K     <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> <c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
+nnoremap <silent> 1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
+nnoremap <silent> gr    <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
+nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
+nnoremap <silent> gd    <cmd>lua vim.lsp.buf.definition()<CR>
+
+set updatetime=300
+autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
+
+nnoremap <silent> g[ <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
+nnoremap <silent> g] <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+
+set signcolumn=yes
+
+"autocmd CursorMoved,InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost *
+"\ lua require'lsp_extensions'.inlay_hints{ prefix = '', highlight = "Comment" }
+
+autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = '', highlight = "Comment", enabled = {"TypeHint", "ChainingHint", "ParameterHint"}}
