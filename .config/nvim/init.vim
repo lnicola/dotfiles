@@ -11,9 +11,12 @@ Pack 'bling/vim-bufferline'
 Pack 'scrooloose/nerdtree'
 Pack 'Xuyuanp/nerdtree-git-plugin'
 Pack 'neovim/nvim-lspconfig'
-Pack 'nvim-lua/lsp_extensions.nvim'
 Pack 'nvim-lua/completion-nvim'
 Pack 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Pack 'neovim/nvim-lspconfig'
+Pack 'simrat39/rust-tools.nvim'
+Pack 'nvim-lua/popup.nvim'
+Pack 'nvim-telescope/telescope.nvim'
 Pack 'sukima/xmledit'
 Pack 'terryma/vim-multiple-cursors'
 Pack 'tpope/vim-commentary'
@@ -66,38 +69,13 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 let g:airline_powerline_fonts = 1
 
 lua << EOF
-local nvim_lsp = require'lspconfig'
-
 local on_attach = function(client)
     require'completion'.on_attach(client)
 end
 
-nvim_lsp.rust_analyzer.setup({
-    on_attach=on_attach,
-    settings = {
-        ["rust-analyzer"] = {
-            assist = {
-                importMergeBehavior = "last",
-                importPrefix = "by_self",
-            },
-            cargo = {
-                loadOutDirsFromCheck = true,
-                allFeatures = true,
-            },
-            procMacro = {
-                enable = true
-            },
-        }
-    }
+require('rust-tools').setup({
+    server = { on_attach = on_attach }
 })
-
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-    vim.lsp.diagnostic.on_publish_diagnostics, {
-        virtual_text = true,
-        signs = true,
-        update_in_insert = true,
-    }
-)
 
 require'nvim-treesitter.configs'.setup {
   highlight = {
@@ -135,8 +113,3 @@ nnoremap <silent> g[ <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> g] <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
 set signcolumn=yes
-
-"autocmd CursorMoved,InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost *
-"\ lua require'lsp_extensions'.inlay_hints{ prefix = '', highlight = "Comment" }
-
-autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = '', highlight = "Comment", enabled = {"TypeHint", "ChainingHint", "ParameterHint"}}
