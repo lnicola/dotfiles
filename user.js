@@ -17,7 +17,6 @@ user_pref("browser.urlbar.suggest.searches", false);
 user_pref("dom.forms.autocomplete.formautofill", true);
 user_pref("extensions.formautofill.creditCards.available", true);
 user_pref("extensions.pocket.enabled", false);
-user_pref("fission.autostart", true);
 user_pref("general.autoScroll", true);
 user_pref("general.smoothScroll", false);
 user_pref("gfx.color_management.enablev4", true);
