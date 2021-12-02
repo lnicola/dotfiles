@@ -41,7 +41,6 @@ set expandtab
 set smartindent
 set shiftround
 set foldmethod=syntax
-set inccommand=split
 set nomodeline
 set foldlevelstart=99
 
