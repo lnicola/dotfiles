@@ -28,5 +28,5 @@ user_pref("media.ffvpx.enabled", false);
 user_pref("network.IDN_show_punycode", true);
 user_pref("network.security.esni.enabled", true);
 user_pref("network.trr.bootstrapAddress", "1.1.1.1");
-user_pref("network.trr.mode", 0);
+user_pref("network.trr.mode", 2);
 user_pref("privacy.donottrackheader.enabled", true);
