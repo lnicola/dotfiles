@@ -9,6 +9,6 @@ zmodule archive
 zmodule zsh-users/zsh-completions
 zmodule completion
 zmodule zsh-users/zsh-autosuggestions
-zmodule zdharma/fast-syntax-highlighting
+zmodule zdharma-continuum/fast-syntax-highlighting
 zmodule zsh-users/zsh-history-substring-search
 zmodule romkatv/powerlevel10k
