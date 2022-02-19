@@ -1,4 +1,3 @@
-user_pref("app.normandy.enabled", false);
 user_pref("beacon.enabled", false);
 user_pref("browser.backspace_action", 0);
 user_pref("browser.ctrlTab.recentlyUsedOrder", false);
