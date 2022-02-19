@@ -6,7 +6,6 @@ zmodule utility
 zmodule git-info
 zmodule archive
 
-zmodule romkatv/powerlevel10k
 zmodule zsh-users/zsh-completions
 zmodule completion
 zmodule zsh-users/zsh-autosuggestions
