@@ -51,7 +51,7 @@
 [log]
     mailmap = true
 [merge]
-    conflictstyle = diff3
+    conflictStyle = zdiff3
 [mergetool]
     keepBackup = false
 [pull]
