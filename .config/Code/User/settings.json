@@ -50,8 +50,7 @@
         "latex",
         "plaintext"
     ],
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "update.mode": "none",
     "window.autoDetectColorScheme": true,
     "window.doubleClickIconToClose": true,
