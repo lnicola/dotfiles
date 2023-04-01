@@ -1,0 +1,6 @@
+[editor]
+color-modes = true
+gutters = ["diagnostics"]
+
+[editor.lsp]
+display-inlay-hints = true
