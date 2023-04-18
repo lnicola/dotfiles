@@ -1,0 +1,9 @@
+[core]
+color-theme = "Lapce Light"
+
+[editor]
+format-on-save = true
+font-size = 16
+
+[lapce-rust]
+serverPath = "rust-analyzer"
