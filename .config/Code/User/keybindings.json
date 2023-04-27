@@ -86,4 +86,9 @@
         "key": "ctrl+0",
         "command": "editor.action.fontZoomReset"
     },
+    {
+        "key": "Enter",
+        "command": "rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == rust"
+    }
 ]
