@@ -4,6 +4,15 @@ set show-all-if-ambiguous on
 set visible-stats on
 set colored-stats on
 
+set colored-stats on
+set colored-completion-prefix on
+
+#set show-all-if-ambiguous on
+set completion-ignore-case on
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
 set meta-flag on
 set input-meta on
 set convert-meta off
