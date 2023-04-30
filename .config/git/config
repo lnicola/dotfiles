@@ -36,7 +36,7 @@
 [credential]
     helper = store
 [diff]
-    algorithm = patience
+    algorithm = histogram
     external = difft
     indentHeuristic = on
     mnemonicPrefix = true
