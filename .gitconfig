@@ -5,6 +5,7 @@
     cdiff = diff --cached
     st = status
     ci = commit
+    dft = difftool
     ps = push
     pu = pull
     pr = pull --rebase
@@ -36,9 +37,15 @@
     helper = store
 [diff]
     algorithm = patience
+    external = difft
     indentHeuristic = on
     mnemonicPrefix = true
     renames = copies
+    tool = difftastic
+[difftool]
+    prompt = false
+[difftool "difftastic"]
+    cmd = difft "$LOCAL" "$REMOTE"
 [filter "lfs"]
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
@@ -66,9 +73,7 @@
     smtpserverport = 587
     confirm = auto
 [pager]
-    log = diffr --colors added:background:none:foreground:green --colors removed:background:none:foreground:red --colors refine-added:background:none:foreground:green:bold --colors refine-removed:background:none:foreground:red:bold | less -R
-    diff = diffr --colors added:background:none:foreground:green --colors removed:background:none:foreground:red --colors refine-added:background:none:foreground:green:bold --colors refine-removed:background:none:foreground:red:bold | less -R
-    show = diffr --colors added:background:none:foreground:green --colors removed:background:none:foreground:red --colors refine-added:background:none:foreground:green:bold --colors refine-removed:background:none:foreground:red:bold | less -R
+    difftool = true
 [protocol]
     version = 2
 [url "git://gist.github.com/"]
