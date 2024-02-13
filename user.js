@@ -22,6 +22,7 @@ user_pref("media.eme.enabled", true);
 user_pref("media.ffmpeg.vaapi.enabled", true);
 user_pref("media.ffmpeg.dmabuf-textures.enabled", true);
 user_pref("media.ffvpx.enabled", false);
+user_pref("network.dns.disablePrefetchFromHTTPS", false);
 user_pref("network.IDN_show_punycode", true);
 user_pref("network.security.esni.enabled", true);
 user_pref("network.trr.bootstrapAddress", "1.1.1.1");
