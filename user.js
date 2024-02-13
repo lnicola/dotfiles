@@ -1,6 +1,5 @@
 user_pref("beacon.enabled", false);
 user_pref("browser.backspace_action", 0);
-user_pref("browser.ctrlTab.recentlyUsedOrder", false);
 user_pref("browser.discovery.enabled", false);
 user_pref("browser.library.activity-stream.enabled", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
