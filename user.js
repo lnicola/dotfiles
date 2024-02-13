@@ -28,3 +28,4 @@ user_pref("network.security.esni.enabled", true);
 user_pref("network.trr.bootstrapAddress", "1.1.1.1");
 user_pref("network.trr.mode", 2);
 user_pref("privacy.donottrackheader.enabled", true);
+user_pref("privacy.globalprivacycontrol.enabled", true);
