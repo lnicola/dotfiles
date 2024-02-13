@@ -12,6 +12,7 @@ user_pref("extensions.pocket.enabled", false);
 user_pref("general.autoScroll", true);
 user_pref("general.smoothScroll", false);
 user_pref("gfx.webrender.compositor", true);
+user_pref("gfx.webrender.compositor.force-enabled", true);
 user_pref("javascript.options.asyncstack", false);
 user_pref("media.eme.enabled", true);
 user_pref("media.ffmpeg.vaapi.enabled", true);
