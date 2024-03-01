@@ -1,7 +1,5 @@
 {
-    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
     "cmake.configureOnOpen": true,
-    "crates.compatibleDecorator": "",
     "editor.fontFamily": "'Fira Code'",
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
@@ -11,9 +9,14 @@
     "editor.semanticTokenColorCustomizations": {
         "rules": {
             "unresolvedReference": "#ff0000",
+            "*.unsafe:rust": "#eb5046"
         },
     },
     "editor.smoothScrolling": true,
+    "editor.wordBasedSuggestions": "off",
+    "editor.codeActionWidget.includeNearbyQuickFixes": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
     "evenBetterToml.formatter.alignEntries": false,
     "evenBetterToml.formatter.reorderKeys": false,
     "evenBetterToml.schema.enabled": true,
