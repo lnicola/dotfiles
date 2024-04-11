@@ -1,1 +1,1 @@
-ignore = ["LICENSE", "user.js", "userContent.css"]
+ignore = ["LICENSE", "user.js"]
