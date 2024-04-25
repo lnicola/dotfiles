@@ -16,7 +16,6 @@ user_pref("gfx.webrender.compositor.force-enabled", true);
 user_pref("javascript.options.asyncstack", false);
 user_pref("media.eme.enabled", true);
 user_pref("media.ffmpeg.vaapi.enabled", true);
-user_pref("media.ffvpx.enabled", false);
 user_pref("network.dns.disablePrefetchFromHTTPS", false);
 user_pref("network.IDN_show_punycode", true);
 user_pref("network.trr.mode", 2);
