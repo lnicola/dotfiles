@@ -4,6 +4,10 @@ color-theme = "Lapce Light"
 [editor]
 format-on-save = true
 font-size = 16
+font-family = "CommitMono"
 
 [lapce-rust]
 serverPath = "rust-analyzer"
+
+[terminal]
+font-family = "CommitMono"
