@@ -6,6 +6,7 @@ user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", 
 user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.startup.page", 3);
 user_pref("dom.forms.autocomplete.formautofill", true);
+user_pref("dom.private-attribution.submission.enabled", false);
 user_pref("extensions.formautofill.addresses.supported", "on");
 user_pref("extensions.formautofill.creditCards.supported", "on");
 user_pref("extensions.pocket.enabled", false);
